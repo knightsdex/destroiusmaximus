@@ -1,5 +1,5 @@
 const CONFIG = {
-  contractAddress: "0xComingSoon",
+  contractAddress: "0xc5892430fb4385db4bfe0a908af7ffc48567f104",
   uniswapUrl: function () {
     return (
       "https://app.uniswap.org/swap?chain=mainnet&inputCurrency=NATIVE&outputCurrency=" +
