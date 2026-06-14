@@ -1,3315 +1,435 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      WOKIUS MAXIMUS ($WOKIUS) | Roman Gladiator | Ethereum Meme Coin
+    </title>
     <meta
       name="description"
-      content="DESTROIUS MAXIMUS | Destroy the Woke Mind Virus"
+      content="WOKIUS MAXIMUS ⚔️ | 𝕏 CEO | Roman strategy, Viking courage, meme mastery. The ultimate digital gladiator on Ethereum."
     />
-    <title>
-      DESTROIUS MAXIMUS | $DESTROIUS — Destroy the Woke Mind Virus
-    </title>
+    <meta
+      name="keywords"
+      content="flokius,maximus,WOKIUS MAXIMUS,meme coin,ethereum,uniswap,crypto"
+    />
+    <meta
+      property="og:title"
+      content="WOKIUS MAXIMUS ($WOKIUS) | Roman Gladiator | Ethereum Meme Coin"
+    />
+    <meta
+      property="og:description"
+      content="The most contagious ideology ever recorded. Spreads through timelines, comment sections, and a single glance at the chart. No containment. No immunity. Imperator of Woke Mind Virus."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="banner.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="WOKIUS MAXIMUS ($WOKIUS)" />
+    <meta
+      name="twitter:description"
+      content="WOKIUS MAXIMUS ⚔️ | 𝕏 CEO | Roman strategy, Viking courage, meme mastery"
+    />
     <link rel="icon" href="logo.png" type="image/png" />
-
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Outfit:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              imperial: "#9F1D35",
-              "imperial-dark": "#6B1224",
-              gold: "#FFD700",
-              "gold-light": "#FDB927",
-              bronze: "#CD7F32",
-              ivory: "#F5F0E8",
-              marble: "#0D0B0A",
-              "marble-light": "#1A1512",
-            },
-            fontFamily: {
-              roman: ["Cinzel", "serif"],
-              luxury: ["Outfit", "sans-serif"],
-            },
-          },
-        },
-      };
-    </script>
-
-    <style>
-      /* ─── CSS Variables ─── */
-      :root {
-        --imperial: #9f1d35;
-        --imperial-dark: #6b1224;
-        --gold: #ffd700;
-        --gold-light: #fdb927;
-        --bronze: #cd7f32;
-        --ivory: #f5f0e8;
-        --marble: #0d0b0a;
-        --marble-light: #1a1512;
-      }
-
-      *,
-      *::before,
-      *::after {
-        box-sizing: border-box;
-      }
-
-      html {
-        scroll-behavior: smooth;
-        scrollbar-color: #b8860b #0a0908;
-        scrollbar-width: thin;
-      }
-
-      body {
-        font-family: "Outfit", sans-serif;
-        background: var(--marble);
-        color: var(--ivory);
-        overflow-x: hidden;
-        -webkit-font-smoothing: antialiased;
-      }
-
-      /* ─── Imperial Scrollbar ─── */
-      ::-webkit-scrollbar {
-        width: 10px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #0a0908;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: linear-gradient(180deg, #b8860b, #6b1224);
-        border-radius: 5px;
-        border: 2px solid #0a0908;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: linear-gradient(180deg, #ffd700, #9f1d35);
-      }
-
-      /* ─── Gold Selection ─── */
-      ::selection {
-        background: rgba(255, 215, 0, 0.25);
-        color: #fff8dc;
-      }
-
-      /* ─── Gold Metallic Text ─── */
-      .gold-text {
-        background: linear-gradient(
-          135deg,
-          #ffd700 0%,
-          #fdb927 25%,
-          #fff8dc 50%,
-          #fdb927 75%,
-          #b8860b 100%
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        filter: drop-shadow(0 2px 8px rgba(255, 215, 0, 0.4));
-      }
-
-      .gold-text-glow {
-        background: linear-gradient(
-          135deg,
-          #ffd700 0%,
-          #fff8dc 40%,
-          #fdb927 70%,
-          #ffd700 100%
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.6))
-          drop-shadow(0 0 40px rgba(255, 215, 0, 0.3));
-        animation: goldPulse 3s ease-in-out infinite;
-      }
-
-      @keyframes goldPulse {
-        0%,
-        100% {
-          filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.5));
-        }
-        50% {
-          filter: drop-shadow(0 0 35px rgba(255, 215, 0, 0.8))
-            drop-shadow(0 0 60px rgba(255, 215, 0, 0.4));
-        }
-      }
-
-      /* ─── Marble Background ─── */
-      .marble-bg {
-        background-color: var(--marble);
-        background-image: radial-gradient(
-            ellipse at 20% 50%,
-            rgba(159, 29, 53, 0.08) 0%,
-            transparent 50%
-          ),
-          radial-gradient(
-            ellipse at 80% 20%,
-            rgba(255, 215, 0, 0.05) 0%,
-            transparent 40%
-          ),
-          radial-gradient(
-            ellipse at 60% 80%,
-            rgba(159, 29, 53, 0.06) 0%,
-            transparent 45%
-          ),
-          url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-      }
-
-      /* ─── Glassmorphic Navbar ─── */
-      .navbar-glass {
-        background: rgba(13, 11, 10, 0.55);
-        backdrop-filter: blur(20px) saturate(1.4);
-        -webkit-backdrop-filter: blur(20px) saturate(1.4);
-        border-bottom: 1px solid rgba(255, 215, 0, 0.15);
-        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-      }
-
-      .navbar-glass.scrolled {
-        background: rgba(13, 11, 10, 0.92);
-        border-bottom: 1px solid rgba(255, 215, 0, 0.35);
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5),
-          0 0 60px rgba(255, 215, 0, 0.05);
-      }
-
-      /* ─── Nav Link Gold Underline ─── */
-      .nav-link {
-        position: relative;
-        padding-bottom: 3px;
-      }
-      .nav-link::after {
-        content: "";
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        width: 0;
-        height: 1px;
-        background: linear-gradient(
-          90deg,
-          transparent,
-          var(--gold),
-          transparent
-        );
-        transform: translateX(-50%);
-        transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      .nav-link:hover::after,
-      .nav-link.text-gold::after {
-        width: 100%;
-      }
-
-      /* ─── Roman Shield Button ─── */
-      .shield-btn {
-        position: relative;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem;
-        padding: 0.75rem 1.75rem;
-        font-family: "Cinzel", serif;
-        font-weight: 700;
-        font-size: 0.85rem;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        color: #1a0a00;
-        background: linear-gradient(
-          145deg,
-          #ffd700 0%,
-          #fdb927 40%,
-          #e6b800 70%,
-          #ffd700 100%
-        );
-        border: 2px solid rgba(255, 248, 220, 0.6);
-        border-radius: 4px 4px 12px 12px;
-        clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%);
-        padding-bottom: 1.25rem;
-        cursor: pointer;
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3),
-          inset 0 1px 0 rgba(255, 255, 255, 0.4);
-        overflow: hidden;
-        text-decoration: none;
-        white-space: nowrap;
-      }
-
-      .shield-btn::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(
-          105deg,
-          transparent 40%,
-          rgba(255, 255, 255, 0.35) 50%,
-          transparent 60%
-        );
-        transform: translateX(-100%);
-        transition: transform 0.6s ease;
-      }
-
-      .shield-btn:hover::before {
-        transform: translateX(100%);
-      }
-
-      .shield-btn:hover {
-        transform: translateY(-3px) scale(1.03);
-        box-shadow: 0 8px 40px rgba(255, 215, 0, 0.5),
-          0 0 60px rgba(255, 215, 0, 0.2),
-          inset 0 1px 0 rgba(255, 255, 255, 0.5);
-      }
-
-      .shield-btn:active {
-        transform: translateY(0) scale(0.98);
-      }
-
-      .shield-btn-lg {
-        padding: 1rem 2.5rem;
-        font-size: 1rem;
-        padding-bottom: 1.5rem;
-      }
-
-      .shield-btn-nav {
-        padding: 0.5rem 1.25rem;
-        font-size: 0.7rem;
-        padding-bottom: 0.9rem;
-      }
-
-      /* ─── Crimson Button ─── */
-      .crimson-btn {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        padding: 0.85rem 2rem;
-        font-family: "Cinzel", serif;
-        font-weight: 600;
-        font-size: 0.9rem;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        color: var(--ivory);
-        background: linear-gradient(145deg, #9f1d35 0%, #6b1224 100%);
-        border: 2px solid rgba(255, 215, 0, 0.3);
-        border-radius: 4px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        text-decoration: none;
-        box-shadow: 0 4px 20px rgba(159, 29, 53, 0.4);
-      }
-
-      .crimson-btn:hover {
-        transform: translateY(-2px);
-        border-color: rgba(255, 215, 0, 0.6);
-        box-shadow: 0 8px 30px rgba(159, 29, 53, 0.6),
-          0 0 20px rgba(255, 215, 0, 0.15);
-      }
-
-      /* ─── Logo Aura ─── */
-      .logo-aura {
-        animation: logoBreath 4s ease-in-out infinite;
-        filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.5))
-          drop-shadow(0 0 40px rgba(255, 215, 0, 0.2));
-      }
-
-      @keyframes logoBreath {
-        0%,
-        100% {
-          transform: scale(1) rotate(0deg);
-          filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.5));
-        }
-        50% {
-          transform: scale(1.04) rotate(1deg);
-          filter: drop-shadow(0 0 35px rgba(255, 215, 0, 0.7))
-            drop-shadow(0 0 60px rgba(255, 215, 0, 0.3));
-        }
-      }
-
-      /* ─── Parallax Layers ─── */
-      .parallax-layer {
-        position: absolute;
-        inset: 0;
-        pointer-events: none;
-        will-change: transform;
-      }
-
-      /* ─── Particle Canvas ─── */
-      #particle-canvas {
-        position: fixed;
-        inset: 0;
-        z-index: 1;
-        pointer-events: none;
-        opacity: 0.7;
-      }
-
-      /* ─── Section Arch Reveal ─── */
-      .arch-frame {
-        position: relative;
-        padding: 3rem 2rem;
-        border: 2px solid rgba(255, 215, 0, 0.2);
-        border-radius: 50% 50% 0 0 / 20% 20% 0 0;
-        background: linear-gradient(
-          180deg,
-          rgba(26, 21, 18, 0.72) 0%,
-          rgba(13, 11, 10, 0.85) 100%
-        );
-        backdrop-filter: blur(4px);
-        box-shadow: inset 0 0 60px rgba(255, 215, 0, 0.03),
-          0 0 40px rgba(0, 0, 0, 0.5);
-      }
-
-      .arch-frame::before,
-      .arch-frame::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        width: 3px;
-        height: 100%;
-        background: linear-gradient(180deg, var(--gold), transparent);
-        opacity: 0.4;
-      }
-      .arch-frame::before {
-        left: 1.5rem;
-      }
-      .arch-frame::after {
-        right: 1.5rem;
-      }
-
-      /* ─── Downloaded Icon Assets ─── */
-      .icon-img {
-        display: inline-block;
-        object-fit: contain;
-        flex-shrink: 0;
-        vertical-align: middle;
-      }
-      .icon-img-sm {
-        width: 1rem;
-        height: 1rem;
-      }
-      .icon-img-md {
-        width: 2.5rem;
-        height: 2.5rem;
-      }
-      .icon-img-lg {
-        width: 3.5rem;
-        height: 3.5rem;
-      }
-      .icon-img-xl {
-        width: 4.5rem;
-        height: 4.5rem;
-      }
-      .icon-img-gold {
-        filter: brightness(0) saturate(100%) invert(76%) sepia(68%)
-          saturate(600%) hue-rotate(5deg) brightness(105%);
-      }
-      .icon-img-ivory {
-        filter: brightness(0) saturate(100%) invert(95%) sepia(8%)
-          saturate(400%) hue-rotate(5deg);
-      }
-      .icon-img-dark {
-        filter: brightness(0) saturate(100%) invert(8%) sepia(10%)
-          saturate(500%) hue-rotate(5deg);
-      }
-
-      /* ─── Hero Video Background ─── */
-      .hero-video-wrap {
-        position: absolute;
-        inset: 0;
-        z-index: 0;
-        overflow: hidden;
-      }
-      .hero-video {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        animation: heroVideoZoom 36s ease-in-out infinite alternate;
-      }
-
-      @keyframes heroVideoZoom {
-        0% {
-          transform: scale(1.05);
-        }
-        100% {
-          transform: scale(1.14);
-        }
-      }
-
-      /* ─── Hero Scroll Indicator ─── */
-      .scroll-indicator {
-        position: absolute;
-        bottom: 4.25rem;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 10;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.4rem;
-        color: rgba(255, 215, 0, 0.65);
-        font-family: "Cinzel", serif;
-        font-size: 0.6rem;
-        letter-spacing: 0.3em;
-        text-transform: uppercase;
-        text-decoration: none;
-        transition: color 0.3s ease;
-      }
-      .scroll-indicator:hover {
-        color: var(--gold);
-      }
-      .scroll-indicator__mouse {
-        width: 22px;
-        height: 34px;
-        border: 1.5px solid rgba(255, 215, 0, 0.55);
-        border-radius: 11px;
-        position: relative;
-      }
-      .scroll-indicator__mouse::after {
-        content: "";
-        position: absolute;
-        top: 6px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 3px;
-        height: 7px;
-        border-radius: 2px;
-        background: var(--gold);
-        animation: scrollWheel 1.8s ease-in-out infinite;
-      }
-      @keyframes scrollWheel {
-        0% {
-          opacity: 1;
-          transform: translateX(-50%) translateY(0);
-        }
-        70% {
-          opacity: 0;
-          transform: translateX(-50%) translateY(10px);
-        }
-        100% {
-          opacity: 0;
-          transform: translateX(-50%) translateY(0);
-        }
-      }
-      @media (max-height: 740px) {
-        .scroll-indicator {
-          display: none;
-        }
-      }
-      .hero-video-overlay {
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(
-            180deg,
-            rgba(13, 11, 10, 0.7) 0%,
-            rgba(159, 29, 53, 0.25) 40%,
-            rgba(13, 11, 10, 0.85) 100%
-          ),
-          radial-gradient(
-            ellipse at center,
-            transparent 30%,
-            rgba(13, 11, 10, 0.6) 100%
-          );
-        pointer-events: none;
-      }
-      .hero-arena-vignette {
-        position: absolute;
-        inset: 0;
-        background: repeating-linear-gradient(
-            90deg,
-            rgba(255, 215, 0, 0.02) 0px,
-            transparent 1px,
-            transparent 80px
-          ),
-          radial-gradient(
-            ellipse 120% 80% at 50% 100%,
-            rgba(159, 29, 53, 0.2) 0%,
-            transparent 60%
-          );
-        pointer-events: none;
-        z-index: 1;
-      }
-
-      /* ─── Gladiator Arena Sections ─── */
-      .gladiator-section {
-        position: relative;
-      }
-      .gladiator-section::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: min(90%, 600px);
-        height: 2px;
-        background: linear-gradient(
-          90deg,
-          transparent,
-          var(--gold),
-          var(--imperial),
-          var(--gold),
-          transparent
-        );
-        opacity: 0.5;
-      }
-      .gladiator-section::after {
-        content: "";
-        position: absolute;
-        top: -5px;
-        left: 50%;
-        transform: translateX(-50%) rotate(45deg);
-        width: 11px;
-        height: 11px;
-        background: linear-gradient(135deg, #ffd700, #b8860b);
-        border: 1px solid rgba(255, 248, 220, 0.5);
-        box-shadow: 0 0 14px rgba(255, 215, 0, 0.55);
-        z-index: 3;
-      }
-
-      /* ─── Section Kicker (chapter eyebrow) ─── */
-      .section-kicker {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.85rem;
-        font-family: "Cinzel", serif;
-        font-size: 0.7rem;
-        font-weight: 600;
-        letter-spacing: 0.38em;
-        text-transform: uppercase;
-        color: rgba(205, 127, 50, 0.95);
-        margin-bottom: 0.85rem;
-        text-shadow: 0 0 12px rgba(205, 127, 50, 0.4);
-      }
-      .section-kicker::before,
-      .section-kicker::after {
-        content: "";
-        width: 38px;
-        height: 1px;
-      }
-      .section-kicker::before {
-        background: linear-gradient(90deg, transparent, var(--bronze));
-      }
-      .section-kicker::after {
-        background: linear-gradient(90deg, var(--bronze), transparent);
-      }
-
-      /* ─── Ornament Divider ─── */
-      .ornament-divider {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.7rem;
-        margin: 1rem auto 0;
-        max-width: 22rem;
-      }
-      .ornament-divider::before,
-      .ornament-divider::after {
-        content: "";
-        flex: 1;
-        height: 1px;
-      }
-      .ornament-divider::before {
-        background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.6));
-      }
-      .ornament-divider::after {
-        background: linear-gradient(90deg, rgba(255, 215, 0, 0.6), transparent);
-      }
-      .ornament-divider i {
-        width: 7px;
-        height: 7px;
-        transform: rotate(45deg);
-        background: linear-gradient(135deg, #ffd700, #b8860b);
-        box-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
-        flex-shrink: 0;
-      }
-      .ornament-divider i:nth-child(2) {
-        width: 10px;
-        height: 10px;
-        border: 1px solid rgba(255, 248, 220, 0.5);
-      }
-      .arena-banner {
-        background: linear-gradient(
-          90deg,
-          var(--imperial-dark),
-          var(--imperial),
-          var(--imperial-dark)
-        );
-        border-top: 1px solid rgba(255, 215, 0, 0.3);
-        border-bottom: 1px solid rgba(255, 215, 0, 0.3);
-      }
-
-      /* ─── Section Background Images ─── */
-      .section-bg {
-        position: absolute;
-        inset: 0;
-        background-size: cover;
-        background-position: top center;
-        background-repeat: no-repeat;
-        transform: translateY(0);
-        will-change: transform;
-        pointer-events: none;
-      }
-      .section-bg-parallax {
-        transition: transform 0.15s ease-out;
-      }
-
-      .section-bg-overlay {
-        position: absolute;
-        inset: 0;
-        pointer-events: none;
-        z-index: 1;
-      }
-
-      .section-bg-overlay--about {
-        background: linear-gradient(
-            135deg,
-            rgba(13, 11, 10, 0.92) 0%,
-            rgba(159, 29, 53, 0.55) 50%,
-            rgba(13, 11, 10, 0.94) 100%
-          ),
-          radial-gradient(
-            ellipse at 80% 20%,
-            rgba(255, 215, 0, 0.08) 0%,
-            transparent 50%
-          );
-      }
-      .section-bg-overlay--buy {
-        background: linear-gradient(
-            180deg,
-            rgba(13, 11, 10, 0.9) 0%,
-            rgba(107, 18, 36, 0.7) 45%,
-            rgba(13, 11, 10, 0.93) 100%
-          ),
-          radial-gradient(
-            ellipse at 20% 80%,
-            rgba(255, 215, 0, 0.06) 0%,
-            transparent 45%
-          );
-      }
-      .section-bg-overlay--chart {
-        background: linear-gradient(
-            160deg,
-            rgba(13, 11, 10, 0.93) 0%,
-            rgba(13, 11, 10, 0.78) 40%,
-            rgba(159, 29, 53, 0.45) 100%
-          ),
-          radial-gradient(
-            ellipse at center,
-            transparent 20%,
-            rgba(13, 11, 10, 0.85) 100%
-          );
-      }
-      .section-bg-overlay--join {
-        background: linear-gradient(
-            180deg,
-            rgba(13, 11, 10, 0.88) 0%,
-            rgba(159, 29, 53, 0.35) 50%,
-            rgba(13, 11, 10, 0.94) 100%
-          ),
-          radial-gradient(
-            ellipse at center,
-            rgba(255, 215, 0, 0.06) 0%,
-            transparent 55%
-          );
-      }
-
-      /* ─── Roman Banner Frame (Join Us) ─── */
-      .roman-banner-frame {
-        position: relative;
-        max-width: 52rem;
-        margin: 0 auto 3rem;
-        padding: 3px;
-        background: linear-gradient(
-          135deg,
-          #ffd700 0%,
-          #cd7f32 30%,
-          #9f1d35 60%,
-          #b8860b 100%
-        );
-        border-radius: 6px;
-        box-shadow: 0 0 0 1px rgba(255, 215, 0, 0.25),
-          0 20px 60px rgba(0, 0, 0, 0.55), 0 0 50px rgba(255, 215, 0, 0.12);
-      }
-
-      .roman-banner-frame::before,
-      .roman-banner-frame::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 4px;
-        background: linear-gradient(180deg, #ffd700, #cd7f32 50%, transparent);
-        opacity: 0.55;
-        z-index: 2;
-        pointer-events: none;
-      }
-      .roman-banner-frame::before {
-        left: 10px;
-        border-radius: 2px;
-      }
-      .roman-banner-frame::after {
-        right: 10px;
-        border-radius: 2px;
-      }
-
-      .roman-banner-frame__arch {
-        position: absolute;
-        top: -1px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 72%;
-        height: 28px;
-        border: 2px solid rgba(255, 215, 0, 0.45);
-        border-bottom: none;
-        border-radius: 50% 50% 0 0 / 100% 100% 0 0;
-        pointer-events: none;
-        z-index: 3;
-      }
-
-      .roman-banner-frame__inner {
-        position: relative;
-        overflow: hidden;
-        background: #0a0908;
-        border: 2px solid rgba(255, 248, 220, 0.2);
-        border-radius: 4px 4px 8px 8px;
-      }
-
-      .roman-banner-frame__img {
-        display: block;
-        width: 100%;
-        aspect-ratio: 3 / 1;
-        object-fit: contain;
-        object-position: top center;
-        background: #0a0908;
-      }
-
-      .roman-banner-frame__veil {
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(
-          180deg,
-          transparent 55%,
-          rgba(13, 11, 10, 0.35) 100%
-        );
-        pointer-events: none;
-        z-index: 1;
-      }
-
-      .roman-banner-frame__label {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.75rem;
-        padding: 0.65rem 1rem;
-        background: linear-gradient(
-          180deg,
-          rgba(26, 21, 18, 0.95),
-          rgba(13, 11, 10, 0.98)
-        );
-        border-top: 1px solid rgba(255, 215, 0, 0.2);
-        font-family: "Cinzel", serif;
-        font-size: 0.7rem;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
-        color: var(--gold);
-      }
-
-      #banner-particles {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-        z-index: 2;
-      }
-
-      /* ─── Roman Logo Frame ─── */
-      .roman-logo-frame {
-        position: relative;
-        display: inline-flex;
-        flex-direction: column;
-        padding: 2px;
-        background: linear-gradient(
-          135deg,
-          #ffd700 0%,
-          #cd7f32 30%,
-          #9f1d35 65%,
-          #b8860b 100%
-        );
-        border-radius: 6px;
-        box-shadow: 0 0 0 1px rgba(255, 215, 0, 0.22),
-          0 10px 36px rgba(0, 0, 0, 0.45), 0 0 30px rgba(255, 215, 0, 0.1);
-        flex-shrink: 0;
-      }
-
-      .roman-logo-frame::before,
-      .roman-logo-frame::after {
-        content: "";
-        position: absolute;
-        top: 8%;
-        bottom: 8%;
-        width: 2px;
-        background: linear-gradient(180deg, #ffd700, #cd7f32 50%, transparent);
-        opacity: 0.45;
-        z-index: 2;
-        pointer-events: none;
-      }
-      .roman-logo-frame::before {
-        left: 6px;
-      }
-      .roman-logo-frame::after {
-        right: 6px;
-      }
-
-      .roman-logo-frame__arch {
-        position: absolute;
-        top: -1px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 68%;
-        height: 14px;
-        border: 1px solid rgba(255, 215, 0, 0.4);
-        border-bottom: none;
-        border-radius: 50% 50% 0 0 / 100% 100% 0 0;
-        pointer-events: none;
-        z-index: 3;
-      }
-
-      .roman-logo-frame__inner {
-        position: relative;
-        overflow: hidden;
-        background: radial-gradient(
-          circle at center,
-          rgba(26, 21, 18, 0.9) 0%,
-          #0a0908 100%
-        );
-        border: 1px solid rgba(255, 248, 220, 0.18);
-        border-radius: 4px;
-        padding: 6px;
-      }
-
-      .roman-logo-frame__img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-      }
-
-      .roman-logo-frame--nav .roman-logo-frame__inner {
-        padding: 4px;
-      }
-      .roman-logo-frame--nav .roman-logo-frame__img {
-        width: 2.25rem;
-        height: 2.25rem;
-      }
-      @media (min-width: 1024px) {
-        .roman-logo-frame--nav .roman-logo-frame__img {
-          width: 2.75rem;
-          height: 2.75rem;
-        }
-      }
-      .roman-logo-frame--nav .roman-logo-frame__arch {
-        display: none;
-      }
-
-      .roman-logo-frame--hero {
-        margin: 0 auto;
-      }
-      .roman-logo-frame--hero .roman-logo-frame__inner {
-        padding: 10px;
-      }
-      .roman-logo-frame--hero .roman-logo-frame__arch {
-        height: 22px;
-      }
-      .roman-logo-frame--hero .roman-logo-frame__img {
-        width: 7.5rem;
-        height: 7.5rem;
-      }
-      @media (min-width: 640px) {
-        .roman-logo-frame--hero .roman-logo-frame__img {
-          width: 10rem;
-          height: 10rem;
-        }
-      }
-      @media (min-width: 768px) {
-        .roman-logo-frame--hero .roman-logo-frame__img {
-          width: 11.5rem;
-          height: 11.5rem;
-        }
-      }
-
-      .section-bg-overlay--footer {
-        background: linear-gradient(
-            180deg,
-            rgba(13, 11, 10, 0.88) 0%,
-            rgba(8, 7, 6, 0.96) 100%
-          ),
-          radial-gradient(
-            ellipse at center,
-            rgba(255, 215, 0, 0.04) 0%,
-            transparent 60%
-          );
-      }
-
-      .section-content {
-        position: relative;
-        z-index: 2;
-      }
-
-      .section-accent {
-        position: absolute;
-        pointer-events: none;
-        z-index: 1;
-        opacity: 0.35;
-        border-radius: 16px;
-        border: 2px solid rgba(255, 215, 0, 0.2);
-        box-shadow: 0 16px 48px rgba(0, 0, 0, 0.45);
-        object-fit: cover;
-        filter: saturate(0.85) contrast(1.05);
-      }
-      .section-accent--sm {
-        width: 140px;
-        height: 140px;
-      }
-      .section-accent--md {
-        width: 200px;
-        height: 200px;
-      }
-      .section-accent--lg {
-        width: 260px;
-        height: 260px;
-      }
-
-      @media (max-width: 1024px) {
-        .section-accent {
-          display: none;
-        }
-      }
-
-      .legend-pillar {
-        text-align: center;
-        padding: 1.5rem 1rem;
-        border: 1px solid rgba(255, 215, 0, 0.15);
-        border-radius: 12px;
-        background: rgba(13, 11, 10, 0.65);
-        backdrop-filter: blur(8px);
-        transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      .legend-pillar:hover {
-        transform: translateY(-5px);
-        border-color: rgba(255, 215, 0, 0.45);
-        background: rgba(26, 21, 18, 0.8);
-        box-shadow: 0 14px 36px rgba(0, 0, 0, 0.5),
-          0 0 26px rgba(255, 215, 0, 0.12);
-      }
-      .legend-pillar:hover .icon-img {
-        filter: brightness(0) saturate(100%) invert(76%) sepia(68%)
-          saturate(600%) hue-rotate(5deg) brightness(120%)
-          drop-shadow(0 0 8px rgba(255, 215, 0, 0.6));
-      }
-
-      .ticker-icon {
-        width: 14px;
-        height: 14px;
-        display: inline-block;
-        vertical-align: middle;
-        margin: 0 4px;
-        filter: brightness(0) saturate(100%) invert(76%) sepia(68%)
-          saturate(600%) hue-rotate(5deg) brightness(105%);
-      }
-
-      /* ─── Roman Column ─── */
-      .roman-column {
-        width: 4px;
-        background: linear-gradient(
-          180deg,
-          var(--gold),
-          var(--bronze),
-          transparent
-        );
-        border-radius: 2px;
-        opacity: 0.5;
-      }
-
-      /* ─── Shield Cards ─── */
-      .shield-card {
-        position: relative;
-        background: linear-gradient(
-          160deg,
-          rgba(26, 21, 18, 0.82) 0%,
-          rgba(13, 11, 10, 0.88) 100%
-        );
-        backdrop-filter: blur(6px);
-        border: 1px solid rgba(255, 215, 0, 0.2);
-        border-top: 3px solid var(--imperial);
-        border-radius: 12px;
-        padding: 2rem 1.5rem;
-        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        transform-style: preserve-3d;
-        perspective: 1000px;
-        overflow: hidden;
-      }
-
-      .shield-card::before {
-        content: "";
-        position: absolute;
-        top: -50%;
-        left: -50%;
-        width: 200%;
-        height: 200%;
-        background: radial-gradient(
-          circle,
-          rgba(255, 215, 0, 0.06) 0%,
-          transparent 60%
-        );
-        opacity: 0;
-        transition: opacity 0.4s ease;
-      }
-
-      .shield-card:hover {
-        transform: translateY(-8px) rotateX(2deg);
-        border-color: rgba(255, 215, 0, 0.5);
-        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5),
-          0 0 40px rgba(255, 215, 0, 0.1);
-      }
-
-      .shield-card:hover::before {
-        opacity: 1;
-      }
-
-      /* ─── Gold Corner Brackets ─── */
-      .gold-corners {
-        position: relative;
-      }
-      .gold-corners > .corner {
-        position: absolute;
-        width: 16px;
-        height: 16px;
-        pointer-events: none;
-        z-index: 3;
-        opacity: 0.55;
-        transition: opacity 0.35s ease, width 0.35s ease, height 0.35s ease;
-      }
-      .gold-corners > .corner--tl {
-        top: 7px;
-        left: 7px;
-        border-top: 2px solid var(--gold);
-        border-left: 2px solid var(--gold);
-      }
-      .gold-corners > .corner--tr {
-        top: 7px;
-        right: 7px;
-        border-top: 2px solid var(--gold);
-        border-right: 2px solid var(--gold);
-      }
-      .gold-corners > .corner--bl {
-        bottom: 7px;
-        left: 7px;
-        border-bottom: 2px solid var(--gold);
-        border-left: 2px solid var(--gold);
-      }
-      .gold-corners > .corner--br {
-        bottom: 7px;
-        right: 7px;
-        border-bottom: 2px solid var(--gold);
-        border-right: 2px solid var(--gold);
-      }
-      .gold-corners:hover > .corner {
-        opacity: 1;
-        width: 22px;
-        height: 22px;
-      }
-
-      .roman-numeral {
-        font-family: "Cinzel", serif;
-        font-size: 3.25rem;
-        font-weight: 900;
-        line-height: 1;
-        opacity: 0.18;
-        position: absolute;
-        top: 0.6rem;
-        right: 1rem;
-      }
-
-      /* ─── Stat Cards ─── */
-      .stat-card {
-        position: relative;
-        background: rgba(26, 21, 18, 0.6);
-        backdrop-filter: blur(8px);
-        border: 1px solid rgba(255, 215, 0, 0.15);
-        border-radius: 10px;
-        padding: 1rem;
-        transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      .stat-card:hover {
-        transform: translateY(-4px);
-        border-color: rgba(255, 215, 0, 0.45);
-        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45),
-          0 0 24px rgba(255, 215, 0, 0.1);
-      }
-      .stat-card::before,
-      .stat-card::after {
-        content: "";
-        position: absolute;
-        width: 12px;
-        height: 12px;
-        opacity: 0.5;
-        transition: opacity 0.35s ease;
-      }
-      .stat-card::before {
-        top: 5px;
-        left: 5px;
-        border-top: 1.5px solid var(--gold);
-        border-left: 1.5px solid var(--gold);
-      }
-      .stat-card::after {
-        bottom: 5px;
-        right: 5px;
-        border-bottom: 1.5px solid var(--gold);
-        border-right: 1.5px solid var(--gold);
-      }
-      .stat-card:hover::before,
-      .stat-card:hover::after {
-        opacity: 1;
-      }
-
-      /* ─── Chart Frame ─── */
-      .chart-frame {
-        position: relative;
-        border: 3px solid transparent;
-        border-radius: 16px;
-        background: linear-gradient(var(--marble-light), var(--marble-light))
-            padding-box,
-          linear-gradient(135deg, #ffd700, #cd7f32, #9f1d35, #ffd700) border-box;
-        padding: 4px;
-        box-shadow: 0 0 60px rgba(255, 215, 0, 0.15),
-          inset 0 0 30px rgba(0, 0, 0, 0.5);
-      }
-
-      .chart-frame__plaque {
-        position: absolute;
-        top: -14px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 4;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        padding: 0.3rem 1.4rem;
-        background: linear-gradient(145deg, #1a1512, #0d0b0a);
-        border: 1px solid rgba(255, 215, 0, 0.45);
-        border-radius: 999px;
-        font-family: "Cinzel", serif;
-        font-size: 0.62rem;
-        font-weight: 700;
-        letter-spacing: 0.28em;
-        text-transform: uppercase;
-        color: var(--gold);
-        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6),
-          0 0 18px rgba(255, 215, 0, 0.15);
-        white-space: nowrap;
-      }
-      .chart-frame__plaque .live-dot {
-        width: 7px;
-        height: 7px;
-        border-radius: 50%;
-        background: #ff3b4e;
-        box-shadow: 0 0 8px rgba(255, 59, 78, 0.9);
-        animation: liveDot 1.6s ease-in-out infinite;
-      }
-      @keyframes liveDot {
-        0%,
-        100% {
-          opacity: 1;
-          transform: scale(1);
-        }
-        50% {
-          opacity: 0.45;
-          transform: scale(0.8);
-        }
-      }
-
-      .chart-frame-inner {
-        border-radius: 12px;
-        overflow: hidden;
-        background: #0a0908;
-      }
-
-      #dexscreener-embed {
-        position: relative;
-        width: 100%;
-        padding-bottom: 60%;
-      }
-      @media (max-width: 1024px) {
-        #dexscreener-embed {
-          padding-bottom: 80%;
-        }
-      }
-      @media (max-width: 640px) {
-        #dexscreener-embed {
-          padding-bottom: 125%;
-        }
-      }
-
-      /* ─── Contract Address Bar ─── */
-      .ca-bar {
-        position: relative;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.65rem;
-        max-width: 100%;
-        padding: 0.6rem 1.25rem;
-        background: rgba(26, 21, 18, 0.7);
-        border: 1px solid rgba(255, 215, 0, 0.3);
-        border-radius: 999px;
-        backdrop-filter: blur(8px);
-        cursor: pointer;
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        overflow: hidden;
-      }
-      .ca-bar:hover {
-        border-color: rgba(255, 215, 0, 0.6);
-        box-shadow: 0 0 24px rgba(255, 215, 0, 0.15);
-        transform: translateY(-2px);
-      }
-      .ca-bar__label {
-        font-family: "Cinzel", serif;
-        font-size: 0.65rem;
-        font-weight: 700;
-        letter-spacing: 0.2em;
-        color: var(--gold);
-        flex-shrink: 0;
-        padding-right: 0.65rem;
-        border-right: 1px solid rgba(255, 215, 0, 0.25);
-      }
-      .ca-bar__address {
-        font-family: "Outfit", monospace;
-        font-size: 0.8rem;
-        color: rgba(245, 240, 232, 0.85);
-        letter-spacing: 0.02em;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-      }
-      .ca-bar__copied {
-        position: absolute;
-        inset: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: linear-gradient(
-          145deg,
-          rgba(255, 215, 0, 0.95),
-          rgba(184, 134, 11, 0.95)
-        );
-        color: #1a0a00;
-        font-family: "Cinzel", serif;
-        font-size: 0.75rem;
-        font-weight: 700;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity 0.25s ease;
-      }
-      .ca-bar.copied .ca-bar__copied {
-        opacity: 1;
-      }
-      @media (max-width: 640px) {
-        .ca-bar__address {
-          font-size: 0.66rem;
-          max-width: 58vw;
-        }
-      }
-
-      /* ─── Hype Ticker ─── */
-      .ticker-wrap {
-        overflow: hidden;
-        background: rgba(159, 29, 53, 0.2);
-        border-top: 1px solid rgba(255, 215, 0, 0.2);
-        border-bottom: 1px solid rgba(255, 215, 0, 0.2);
-      }
-
-      .ticker-track {
-        display: flex;
-        width: max-content;
-        animation: tickerScroll 40s linear infinite;
-        white-space: nowrap;
-        will-change: transform;
-      }
-      .ticker-wrap:hover .ticker-track {
-        animation-play-state: paused;
-      }
-
-      .ticker-item {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        margin: 0 2rem;
-        flex-shrink: 0;
-      }
-
-      @keyframes tickerScroll {
-        0% {
-          transform: translateX(0);
-        }
-        100% {
-          transform: translateX(-50%);
-        }
-      }
-
-      /* ─── Social Icons ─── */
-      .social-icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 64px;
-        height: 64px;
-        border-radius: 50%;
-        border: 2px solid rgba(255, 215, 0, 0.3);
-        background: rgba(26, 21, 18, 0.8);
-        color: var(--gold);
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        position: relative;
-        overflow: hidden;
-      }
-
-      .social-icon:hover {
-        transform: scale(1.15) rotate(5deg);
-        border-color: var(--gold);
-        box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
-        color: #fff8dc;
-      }
-
-      .social-icon-lg {
-        width: 80px;
-        height: 80px;
-      }
-
-      .social-icon .social-brand-icon {
-        width: 1.25rem;
-        height: 1.25rem;
-        object-fit: contain;
-        display: block;
-      }
-
-      /* ─── Back to Top Helmet ─── */
-      .back-to-top {
-        position: fixed;
-        bottom: 2rem;
-        right: 2rem;
-        z-index: 100;
-        width: 52px;
-        height: 52px;
-        border-radius: 50%;
-        background: linear-gradient(145deg, #ffd700, #b8860b);
-        border: 2px solid rgba(255, 248, 220, 0.5);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(20px);
-        transition: all 0.4s ease;
-        box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
-        font-size: 1.5rem;
-      }
-
-      .back-to-top.visible {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-      }
-
-      .back-to-top:hover {
-        transform: translateY(-4px) scale(1.1);
-        box-shadow: 0 8px 30px rgba(255, 215, 0, 0.5);
-      }
-
-      /* ─── Floating Elements ─── */
-      .float-element {
-        position: absolute;
-        pointer-events: none;
-        opacity: 0.22;
-        animation: floatDrift 8s ease-in-out infinite;
-        z-index: 2;
-      }
-
-      @keyframes floatDrift {
-        0%,
-        100% {
-          transform: translateY(0) rotate(0deg);
-        }
-        50% {
-          transform: translateY(-20px) rotate(5deg);
-        }
-      }
-
-      /* ─── Coin Burst Container ─── */
-      .coin-burst {
-        position: fixed;
-        pointer-events: none;
-        z-index: 9999;
-      }
-
-      .burst-coin {
-        position: absolute;
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        background: radial-gradient(
-          circle at 30% 30%,
-          #fff8dc,
-          #ffd700,
-          #b8860b
-        );
-        box-shadow: 0 0 6px rgba(255, 215, 0, 0.8);
-        animation: coinFly 1s ease-out forwards;
-      }
-
-      @keyframes coinFly {
-        0% {
-          opacity: 1;
-          transform: translate(0, 0) scale(1);
-        }
-        100% {
-          opacity: 0;
-          transform: translate(var(--tx), var(--ty)) scale(0.3) rotate(720deg);
-        }
-      }
-
-      /* ─── Sword Slash Effect ─── */
-      .sword-slash {
-        position: absolute;
-        inset: 0;
-        pointer-events: none;
-        overflow: hidden;
-        border-radius: inherit;
-      }
-
-      .sword-slash::after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: -100%;
-        width: 200%;
-        height: 2px;
-        background: linear-gradient(
-          90deg,
-          transparent,
-          #fff8dc,
-          #ffd700,
-          #fff8dc,
-          transparent
-        );
-        transform: rotate(-15deg) translateY(-50%);
-        opacity: 0;
-        transition: none;
-      }
-
-      .sword-slash.active::after {
-        animation: slashAnim 0.4s ease-out forwards;
-      }
-
-      @keyframes slashAnim {
-        0% {
-          left: -100%;
-          opacity: 1;
-        }
-        100% {
-          left: 100%;
-          opacity: 0;
-        }
-      }
-
-      /* ─── Pulsing Border ─── */
-      .pulse-border {
-        animation: pulseBorder 2s ease-in-out infinite;
-      }
-
-      @keyframes pulseBorder {
-        0%,
-        100% {
-          box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.3);
-        }
-        50% {
-          box-shadow: 0 0 0 4px rgba(255, 215, 0, 0.1),
-            0 0 20px rgba(255, 215, 0, 0.2);
-        }
-      }
-
-      /* ─── Gladiator Awaken ─── */
-      .awaken-icon {
-        opacity: 0;
-        transform: translateY(30px) scale(0.9);
-        transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-      }
-
-      .awaken-icon.awake {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-      }
-
-      /* ─── Mobile Menu ─── */
-      .mobile-menu {
-        transform: translateX(100%);
-        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      .mobile-menu.open {
-        transform: translateX(0);
-      }
-
-      /* ─── Hero Colosseum Arches ─── */
-      .colosseum-arches {
-        background: radial-gradient(
-            ellipse 80px 120px at 10% 100%,
-            rgba(255, 215, 0, 0.03) 0%,
-            transparent 70%
-          ),
-          radial-gradient(
-            ellipse 80px 120px at 30% 100%,
-            rgba(255, 215, 0, 0.04) 0%,
-            transparent 70%
-          ),
-          radial-gradient(
-            ellipse 80px 120px at 50% 100%,
-            rgba(255, 215, 0, 0.05) 0%,
-            transparent 70%
-          ),
-          radial-gradient(
-            ellipse 80px 120px at 70% 100%,
-            rgba(255, 215, 0, 0.04) 0%,
-            transparent 70%
-          ),
-          radial-gradient(
-            ellipse 80px 120px at 90% 100%,
-            rgba(255, 215, 0, 0.03) 0%,
-            transparent 70%
-          );
-      }
-
-      /* ─── Starfield ─── */
-      .starfield {
-        background-image: radial-gradient(
-            1px 1px at 10% 20%,
-            rgba(255, 255, 255, 0.6) 0%,
-            transparent 100%
-          ),
-          radial-gradient(
-            1px 1px at 30% 60%,
-            rgba(255, 255, 255, 0.4) 0%,
-            transparent 100%
-          ),
-          radial-gradient(
-            1px 1px at 50% 10%,
-            rgba(255, 255, 255, 0.5) 0%,
-            transparent 100%
-          ),
-          radial-gradient(
-            1px 1px at 70% 40%,
-            rgba(255, 255, 255, 0.3) 0%,
-            transparent 100%
-          ),
-          radial-gradient(
-            1px 1px at 90% 70%,
-            rgba(255, 255, 255, 0.6) 0%,
-            transparent 100%
-          ),
-          radial-gradient(
-            1.5px 1.5px at 15% 80%,
-            rgba(255, 215, 0, 0.4) 0%,
-            transparent 100%
-          ),
-          radial-gradient(
-            1.5px 1.5px at 85% 15%,
-            rgba(255, 215, 0, 0.3) 0%,
-            transparent 100%
-          ),
-          radial-gradient(
-            2px 2px at 45% 50%,
-            rgba(255, 215, 0, 0.2) 0%,
-            transparent 100%
-          );
-        animation: starTwinkle 6s ease-in-out infinite alternate;
-      }
-
-      @keyframes starTwinkle {
-        0% {
-          opacity: 0.6;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-
-      /* ─── Scroll Reveal Base ─── */
-      .reveal {
-        opacity: 0;
-        transform: translateY(40px);
-      }
-
-      /* ─── Stat Counter ─── */
-      .stat-value {
-        font-family: "Cinzel", serif;
-        font-weight: 700;
-        font-size: 1.5rem;
-      }
-
-      /* ─── Responsive ─── */
-      @media (max-width: 768px) {
-        .shield-btn-lg {
-          padding: 0.85rem 1.75rem;
-          font-size: 0.85rem;
-        }
-        .arch-frame {
-          padding: 2rem 1rem;
-        }
-        .roman-numeral {
-          font-size: 1.75rem;
-        }
-      }
-
-      /* ─── Reduced Motion ─── */
-      @media (prefers-reduced-motion: reduce) {
-        *,
-        *::before,
-        *::after {
-          animation-duration: 0.01ms !important;
-          animation-iteration-count: 1 !important;
-          transition-duration: 0.01ms !important;
-        }
-        .reveal {
-          opacity: 1;
-          transform: none;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
+  <body>
+    <div class="loading-screen" id="loadingScreen" aria-hidden="true">
+      <div class="loading-glow"></div>
+      <div class="loading-corner loading-corner--tl">⚔</div>
+      <div class="loading-corner loading-corner--tr">⚔</div>
+      <div class="loading-corner loading-corner--bl">⚔</div>
+      <div class="loading-corner loading-corner--br">⚔</div>
+      <div class="loading-pfp">
+        <div class="loading-pfp-ring"></div>
+        <div class="loading-pfp-glow"></div>
+        <img src="logo.png" alt="WOKIUS MAXIMUS" />
+      </div>
+      <h1 class="loading-title">$WOKIUS</h1>
+      <p class="loading-subtitle">Ave, Imperator...</p>
+      <div class="loading-bar">
+        <div class="loading-bar-fill" id="loadingBarFill"></div>
+      </div>
+    </div>
 
-  <body class="marble-bg">
-    <!-- Global Particle Canvas -->
-    <canvas id="particle-canvas" aria-hidden="true"></canvas>
+    <div class="scroll-progress" id="scrollProgress"></div>
 
-    <!-- ═══════════════════ NAVBAR ═══════════════════ -->
-    <nav
-      id="navbar"
-      class="navbar-glass fixed top-0 left-0 right-0 z-50 transition-all duration-400"
-    >
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-16 lg:h-20">
-          <!-- Logo + Name -->
-          <a href="#hero" class="flex items-center gap-3 group flex-shrink-0">
-            <div class="roman-logo-frame roman-logo-frame--nav logo-aura">
-              <div class="roman-logo-frame__inner">
-                <img
-                  src="logo.png"
-                  alt="DESTROIUS MAXIMUS Logo"
-                  class="roman-logo-frame__img"
-                />
-              </div>
-            </div>
-            <span
-              class="font-roman font-bold text-sm sm:text-base lg:text-lg gold-text-glow tracking-wider hidden sm:block"
-            >
-              DESTROIUS MAXIMUS
-            </span>
-          </a>
-
-          <!-- Desktop Nav -->
-          <div class="hidden lg:flex items-center gap-8">
-            <a
-              href="#hero"
-              class="nav-link font-luxury text-sm text-ivory/80 hover:text-gold transition-colors tracking-wide"
-              >Hero</a
-            >
-            <a
-              href="#about"
-              class="nav-link font-luxury text-sm text-ivory/80 hover:text-gold transition-colors tracking-wide"
-              >About</a
-            >
-            <a
-              href="#how-to-buy"
-              class="nav-link font-luxury text-sm text-ivory/80 hover:text-gold transition-colors tracking-wide"
-              >How to Buy</a
-            >
-            <a
-              href="#chart"
-              class="nav-link font-luxury text-sm text-ivory/80 hover:text-gold transition-colors tracking-wide"
-              >Chart</a
-            >
-            <a
-              href="#join-us"
-              class="nav-link font-luxury text-sm text-ivory/80 hover:text-gold transition-colors tracking-wide"
-              >Join Us</a
-            >
-          </div>
-
-          <!-- Right: X + Buy -->
-          <div class="flex items-center gap-3">
-            <a
-              href="https://x.com/DESTROIUSMax"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="social-icon w-10 h-10 text-lg"
-              aria-label="Follow on X"
-            >
-              <img
-                src="assets/icons/x.svg"
-                alt=""
-                class="w-5 h-5 icon-img-ivory"
-                aria-hidden="true"
-              />
-            </a>
-            <a
-              href="https://app.uniswap.org/swap?chain=mainnet&inputCurrency=NATIVE&outputCurrency=0xCoimingSoon"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="shield-btn shield-btn-nav coin-burst-btn hidden sm:inline-flex"
-            >
-              <span class="sword-slash"></span>
-              BUY $DESTROIUS
-            </a>
-            <!-- Mobile Hamburger -->
-            <button
-              id="menu-toggle"
-              class="lg:hidden text-gold p-2"
-              aria-label="Toggle menu"
-            >
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            </button>
-          </div>
+    <nav class="nav" id="nav">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-brand">
+          <img src="logo.png" alt="WOKIUS MAXIMUS logo" class="nav-logo" />
+          <span>DESTROIUS</span>
+        </a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="navLinks">
+          <a href="#about">About</a>
+          <a href="#howtobuy">How to Buy</a>
+          <a href="#chart">Chart</a>
+          <a href="#joinus">Join Us</a>
+          <a
+            href="#"
+            class="nav-cta"
+            id="navBuyBtn"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Buy $WOKIUS</a
+          >
         </div>
       </div>
     </nav>
 
-    <!-- Mobile Menu -->
-    <div
-      id="mobile-menu"
-      class="mobile-menu fixed top-0 right-0 h-full w-72 z-[60] marble-bg border-l border-gold/20 p-8 pt-24"
-    >
-      <button
-        id="menu-close"
-        class="absolute top-6 right-6 text-gold text-2xl"
-        aria-label="Close menu"
-      >
-        &times;
-      </button>
-      <div class="flex flex-col gap-6">
-        <a
-          href="#hero"
-          class="mobile-nav-link font-roman text-lg text-ivory hover:text-gold transition-colors"
-          >Hero</a
-        >
-        <a
-          href="#about"
-          class="mobile-nav-link font-roman text-lg text-ivory hover:text-gold transition-colors"
-          >About</a
-        >
-        <a
-          href="#how-to-buy"
-          class="mobile-nav-link font-roman text-lg text-ivory hover:text-gold transition-colors"
-          >How to Buy</a
-        >
-        <a
-          href="#chart"
-          class="mobile-nav-link font-roman text-lg text-ivory hover:text-gold transition-colors"
-          >Chart</a
-        >
-        <a
-          href="#join-us"
-          class="mobile-nav-link font-roman text-lg text-ivory hover:text-gold transition-colors"
-          >Join Us</a
-        >
-        <a
-          href="https://app.uniswap.org/swap?chain=mainnet&inputCurrency=NATIVE&outputCurrency=0xCoimingSoon"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="shield-btn shield-btn-nav mt-4 coin-burst-btn text-center"
-        >
-          BUY $DESTROIUS
-        </a>
-      </div>
-    </div>
-    <div
-      id="menu-overlay"
-      class="fixed inset-0 bg-black/60 z-[55] hidden"
-    ></div>
-
-    <!-- ═══════════════════ HERO ═══════════════════ -->
-    <section
-      id="hero"
-      class="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-20"
-    >
-      <!-- Video Background -->
-      <div class="hero-video-wrap">
-        <img src="banner.png" alt="" class="hero-video" aria-hidden="true" />
-        <div class="hero-video-overlay"></div>
-      </div>
-      <div class="hero-arena-vignette"></div>
-      <div
-        class="parallax-layer colosseum-arches opacity-40"
-        data-speed="0.15"
-        style="z-index: 1"
-      ></div>
-
-      <!-- Floating Roman SVG Decor -->
-      <div
-        class="float-element"
-        style="
-          top: 15%;
-          left: 8%;
-          animation-delay: 0s;
-          width: 48px;
-          height: 48px;
-        "
-      >
-        <img
-          src="assets/icons/sword.svg"
-          alt=""
-          class="icon-img icon-img-xl icon-img-gold"
-          aria-hidden="true"
-        />
-      </div>
-      <div
-        class="float-element"
-        style="
-          top: 25%;
-          right: 10%;
-          animation-delay: 2s;
-          width: 48px;
-          height: 48px;
-        "
-      >
-        <img
-          src="assets/icons/colosseum.svg"
-          alt=""
-          class="icon-img icon-img-xl"
-          aria-hidden="true"
-        />
-      </div>
-      <div
-        class="float-element"
-        style="
-          bottom: 30%;
-          left: 12%;
-          animation-delay: 1s;
-          width: 40px;
-          height: 40px;
-        "
-      >
-        <img
-          src="assets/icons/laurel.svg"
-          alt=""
-          class="icon-img icon-img-lg icon-img-gold"
-          aria-hidden="true"
-        />
-      </div>
-      <div
-        class="float-element"
-        style="
-          bottom: 20%;
-          right: 8%;
-          animation-delay: 3s;
-          width: 48px;
-          height: 48px;
-        "
-      >
-        <img
-          src="assets/icons/coin.svg"
-          alt=""
-          class="icon-img icon-img-xl icon-img-gold"
-          aria-hidden="true"
-        />
-      </div>
-      <div
-        class="float-element"
-        style="
-          top: 40%;
-          left: 5%;
-          animation-delay: 4s;
-          width: 40px;
-          height: 40px;
-        "
-      >
-        <img
-          src="assets/icons/shield.svg"
-          alt=""
-          class="icon-img icon-img-lg icon-img-gold"
-          aria-hidden="true"
-        />
-      </div>
-      <div
-        class="float-element"
-        style="
-          top: 60%;
-          right: 5%;
-          animation-delay: 1.5s;
-          width: 40px;
-          height: 40px;
-        "
-      >
-        <img
-          src="assets/icons/helmet.svg"
-          alt=""
-          class="icon-img icon-img-lg icon-img-gold"
-          aria-hidden="true"
-        />
-      </div>
-
-      <!-- Hero Content -->
-      <div class="relative z-[5] text-center px-4 max-w-5xl mx-auto">
-        <div class="reveal hero-reveal mb-8">
-          <div class="roman-logo-frame roman-logo-frame--hero logo-aura">
-            <div class="roman-logo-frame__arch" aria-hidden="true"></div>
-            <div class="roman-logo-frame__inner">
-              <img
-                src="logo.png"
-                alt="DESTROIUS MAXIMUS"
-                class="roman-logo-frame__img"
-              />
-            </div>
-          </div>
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="hero">
+        <div class="hero-video-wrap" aria-hidden="true">
+          <img src="./horse.png" class="hero-video" />
+          <div class="hero-video-overlay"></div>
         </div>
-
-        <h1
-          class="reveal hero-reveal font-roman font-black text-4xl sm:text-5xl md:text-7xl lg:text-8xl gold-text-glow leading-tight mb-4 tracking-wide"
-        >
-          DESTROIUS<br class="sm:hidden" />
-          MAXIMUS
-        </h1>
-
-        <p
-          class="reveal hero-reveal font-roman text-lg sm:text-xl md:text-2xl text-ivory/90 mb-2 tracking-wide"
-        >
-          Destroy Woke Mind Virus
-        </p>
-        <p
-          class="reveal hero-reveal font-luxury text-sm sm:text-base text-ivory/60 mb-10 max-w-2xl mx-auto flex items-center justify-center gap-2 flex-wrap"
-        >
-          <img
-            src="assets/icons/sword.svg"
-            alt=""
-            class="icon-img icon-img-sm icon-img-gold"
-            aria-hidden="true"
-          />
-          Destroius Maximus | Destroy Woke Mind Virus
-          <img
-            src="assets/icons/coin.svg"
-            alt=""
-            class="icon-img icon-img-sm icon-img-gold"
-            aria-hidden="true"
-          />
-        </p>
-
-        <div
-          class="reveal hero-reveal flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-6"
-        >
-          <a
-            href="https://app.uniswap.org/swap?chain=mainnet&inputCurrency=NATIVE&outputCurrency=0xCoimingSoon"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="shield-btn shield-btn-lg pulse-border coin-burst-btn w-full sm:w-auto"
-          >
-            <span class="sword-slash"></span>
-            BUY ON UNISWAP
-          </a>
-          <a href="#chart" class="crimson-btn w-full sm:w-auto justify-center">
-            <img
-              src="assets/icons/chart.svg"
-              alt=""
-              class="icon-img icon-img-sm icon-img-gold"
-              aria-hidden="true"
-            />
-            VIEW CHART
+        <div class="container hero-content">
+          <div class="hero-logo-wrap">
+            <div class="hero-logo-ring"></div>
+            <div class="hero-logo-glow"></div>
+            <img src="logo.png" alt="WOKIUS MAXIMUS" class="hero-logo" />
+          </div>
+          <p class="hero-eyebrow">SPQR • ETHEREUM • UNISWAP</p>
+          <h1 class="hero-title">WOKIUS MAXIMUS</h1>
+          <p class="hero-symbol">$WOKIUS</p>
+          <p class="hero-tagline">
+            WOKIUS MAXIMUS ⚔️ | Imperator of Woke Mind Virus
+          </p>
+          <div class="hero-badges">
+            <span class="badge">0% Tax</span>
+            <span class="badge">LP Burned</span>
+            <span class="badge">Renounced</span>
+          </div>
+          <div class="hero-actions">
+            <a
+              href="#"
+              class="btn btn-primary"
+              id="heroBuyBtn"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Buy on Uniswap</a
+            >
+            <a
+              href="https://t.me/wokiusmaximus_portal"
+              class="btn btn-secondary"
+              id="heroBuyBtn"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Telegram</a
+            >
+            <a
+              href="https://x.com/wokiusmaximus"
+              class="btn btn-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Follow on X</a
+            >
+          </div>
+          <a href="#about" class="scroll-hint">
+            <span>Scroll</span>
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M12 5v14M5 12l7 7 7-7" />
+            </svg>
           </a>
         </div>
+      </section>
 
-        <!-- Contract Address -->
-        <div class="reveal hero-reveal mb-12">
-          <button
-            id="ca-copy"
-            class="ca-bar coin-burst-btn"
-            type="button"
-            title="Copy contract address"
-            aria-label="Copy contract address"
-          >
-            <span class="ca-bar__label">CA</span>
-            <span class="ca-bar__address">0xComingSoon</span>
-            <img
-              src="assets/icons/scroll.svg"
-              alt=""
-              class="icon-img icon-img-sm icon-img-gold"
-              aria-hidden="true"
-            />
-            <span class="ca-bar__copied" aria-hidden="true">Copied!</span>
-          </button>
+      <!-- MARQUEE -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span
+            >$WOKIUS • ROMAN GLADIATOR • Imperator of Woke Mind Virus • AVE WOKIUS MAXIMUS • UNISWAP
+            • ETHEREUM
+          </span>
+          <span
+            >$WOKIUS • ROMAN GLADIATOR • Imperator of Woke Mind Virus • AVE WOKIUS MAXIMUS • UNISWAP
+            • ETHEREUM
+          </span>
         </div>
-
-        <!-- Live Stats -->
-        <!-- <div
-          class="reveal hero-reveal grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto"
-        >
-          <div class="stat-card">
-            <div class="stat-value gold-text" data-counter="1000000">$0</div>
-            <div
-              class="text-xs text-ivory/50 font-luxury uppercase tracking-wider mt-1"
-            >
-              Market Cap Goal
-            </div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-value gold-text" data-counter="10000">0</div>
-            <div
-              class="text-xs text-ivory/50 font-luxury uppercase tracking-wider mt-1"
-            >
-              Legionnaires
-            </div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-value gold-text">$DESTROIUS</div>
-            <div
-              class="text-xs text-ivory/50 font-luxury uppercase tracking-wider mt-1"
-            >
-              Ticker
-            </div>
-          </div>
-          <div class="stat-card">
-            <div
-              class="stat-value gold-text flex items-center justify-center gap-1"
-            >
-              <img
-                src="assets/icons/solana.svg"
-                alt=""
-                class="icon-img icon-img-sm icon-img-ivory"
-                aria-hidden="true"
-              />
-              SOL
-            </div>
-            <div
-              class="text-xs text-ivory/50 font-luxury uppercase tracking-wider mt-1"
-            >
-              Chain
-            </div>
-          </div>
-        </div> -->
       </div>
 
-      <!-- Scroll Indicator -->
-      <a
-        href="#about"
-        class="scroll-indicator"
-        aria-label="Scroll to About section"
-      >
-        <span class="scroll-indicator__mouse"></span>
-        <span>Descend</span>
-      </a>
-
-      <!-- Hype Ticker -->
-      <div
-        class="ticker-wrap arena-banner absolute bottom-0 left-0 right-0 z-10 py-3"
-      >
-        <div
-          class="ticker-track font-luxury text-sm text-gold/80 tracking-widest uppercase"
-          data-ticker
-        ></div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════ ABOUT ═══════════════════ -->
-    <section
-      id="about"
-      class="gladiator-section relative py-24 lg:py-32 overflow-hidden"
-    >
-      <div
-        class="section-bg section-bg-parallax"
-        data-section-bg
-        style="background-image: url('horse.png')"
-        aria-hidden="true"
-      ></div>
-      <div
-        class="section-bg-overlay section-bg-overlay--about"
-        aria-hidden="true"
-      ></div>
-      <div class="section-content max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16 reveal about-reveal">
-          <span class="section-kicker">Chapter I &middot; The Legend</span>
-          <h2
-            class="font-roman font-bold text-3xl sm:text-4xl md:text-5xl gold-text mb-2"
-          >
-            The Legend of DESTROIUS MAXIMUS
-          </h2>
-          <div class="ornament-divider"><i></i><i></i><i></i></div>
-        </div>
-
-        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <!-- Text -->
-          <div class="space-y-6 reveal about-reveal">
-            <p
-              class="font-luxury text-ivory/80 text-base sm:text-lg leading-relaxed"
-            >
-              <strong class="text-gold font-semibold"
-                >DESTROIUS MAXIMUS</strong
-              >
-              rides through the storm as a symbol of courage, ambition, and unyielding determination. He believes that civilizations are built not by comfort, but by those willing to challenge limits and pursue greatness.
-            </p>
-            <p
-              class="font-luxury text-ivory/80 text-base sm:text-lg leading-relaxed"
-            >
-            Armed with the legendary blade Trust Destroyer, he confronts every force that seeks to weaken reason and independent thought. Each battle he fights represents the eternal struggle between progress and stagnation, vision and decay.
-            </p>
-            <p
-              class="font-luxury text-ivory/80 text-base sm:text-lg leading-relaxed"
-            >
-            His mission is not merely to defeat enemies, but to inspire builders, innovators, and pioneers to shape a better future. Wherever his banner rises, it carries a single message: the future belongs to those bold enough to create it.
-            </p>
-            <p
-              class="font-roman text-xl sm:text-2xl gold-text-glow mt-8 flex items-center gap-3 flex-wrap"
-            >
-              <img
-                src="assets/icons/colosseum.svg"
-                alt=""
-                class="icon-img icon-img-md"
-                aria-hidden="true"
-              />
-              Ave DESTROIUS MAXIMUS! Destroy the Woke Mind Virus!
-              <img
-                src="assets/icons/sword.svg"
-                alt=""
-                class="icon-img icon-img-md icon-img-gold"
-                aria-hidden="true"
-              />
-            </p>
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-divider">
+            <span>⚔</span><span class="divider-star">☆</span><span>⚔</span>
           </div>
-
-          <!-- Legend Pillars -->
-          <div class="relative reveal about-reveal">
-            <div class="arch-frame">
-              <div class="grid grid-cols-2 gap-4">
-                <div class="awaken-icon legend-pillar" data-awaken>
-                  <img
-                    src="assets/icons/coin.svg"
-                    alt=""
-                    class="icon-img icon-img-lg icon-img-gold mx-auto mb-3"
-                    aria-hidden="true"
-                  />
-                  <h3 class="font-roman text-gold text-sm tracking-wider">
-                    1 Billion
-                  </h3>
-                  <p class="font-luxury text-ivory/50 text-xs mt-1">
-                    Total Supply
-                  </p>
-                </div>
-                <div
-                  class="awaken-icon legend-pillar"
-                  data-awaken
-                  style="transition-delay: 0.15s"
-                >
-                  <img
-                    src="assets/icons/shield.svg"
-                    alt=""
-                    class="icon-img icon-img-lg icon-img-gold mx-auto mb-3"
-                    aria-hidden="true"
-                  />
-                  <h3 class="font-roman text-gold text-sm tracking-wider">
-                    0%
-                  </h3>
-                  <p class="font-luxury text-ivory/50 text-xs mt-1">
-                    Buy/Sell Tax
-                  </p>
-                </div>
-                <div
-                  class="awaken-icon legend-pillar"
-                  data-awaken
-                  style="transition-delay: 0.3s"
-                >
-                  <img
-                    src="assets/icons/sword.svg"
-                    alt=""
-                    class="icon-img icon-img-lg icon-img-gold mx-auto mb-3"
-                    aria-hidden="true"
-                  />
-                  <h3 class="font-roman text-gold text-sm tracking-wider">
-                    Renounced
-                  </h3>
-                  <p class="font-luxury text-ivory/50 text-xs mt-1">
-                    Contract
-                  </p>
-                </div>
-                <div
-                  class="awaken-icon legend-pillar"
-                  data-awaken
-                  style="transition-delay: 0.45s"
-                >
-                  <img
-                    src="assets/icons/helmet.svg"
-                    alt=""
-                    class="icon-img icon-img-lg icon-img-gold mx-auto mb-3"
-                    aria-hidden="true"
-                  />
-                  <h3 class="font-roman text-gold text-sm tracking-wider">
-                    Burned
-                  </h3>
-                  <p class="font-luxury text-ivory/50 text-xs mt-1">
-                    LP
-                  </p>
-                </div>
+          <p class="section-label">About</p>
+          <h2 class="section-title">The Legend of WOKIUS MAXIMUS</h2>
+          <p class="section-subtitle">
+            From the coliseum of content to the battlefield of ideas
+          </p>
+          <div class="about-grid">
+            <div class="about-visual">
+              <div class="about-frame">
+                <img src="logo.png" alt="WOKIUS MAXIMUS on the throne" />
               </div>
+              <div class="about-ornament">⚜ SPQR ⚜</div>
             </div>
-            <div
-              class="roman-column absolute -left-4 top-0 h-full hidden lg:block"
-            ></div>
-            <div
-              class="roman-column absolute -right-4 top-0 h-full hidden lg:block"
-            ></div>
+            <div class="about-text">
+              <blockquote class="about-quote">
+                <p>
+                  The most contagious ideology ever recorded. 
+                </p>
+                <p>
+                  Spreads through timelines, comment sections, and a single glance at the chart. No containment. No immunity.
+                </p>
+                <p>
+                  Fully on-chain. Wokius Maximus has already arrived.
+                </p>
+                <p>
+                  Imperator of Woke Mind Virus. Ave, Wokius Maximus
+                  Maximus!
+                </p>
+              </blockquote>
+              <p class="about-signature">— Imperator WOKIUS MAXIMUS</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Ticker Divider -->
-    <div class="ticker-wrap arena-banner py-3 relative z-10" aria-hidden="true">
-      <div
-        class="ticker-track font-luxury text-sm text-gold/80 tracking-widest uppercase"
-        data-ticker
-      ></div>
-    </div>
-
-    <!-- ═══════════════════ HOW TO BUY ═══════════════════ -->
-    <section
-      id="how-to-buy"
-      class="gladiator-section relative py-24 lg:py-32 overflow-hidden"
-    >
-      <div
-        class="section-bg section-bg-parallax"
-        data-section-bg
-        style="background-image: url('chariot.png')"
-        aria-hidden="true"
-      ></div>
-      <div
-        class="section-bg-overlay section-bg-overlay--buy"
-        aria-hidden="true"
-      ></div>
-      <img
-        src="horse.png"
-        alt=""
-        class="section-accent section-accent--lg"
-        style="left: 3%; bottom: 12%"
-        aria-hidden="true"
-      />
-      <div class="section-content max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16 reveal buy-reveal">
-          <span class="section-kicker">Chapter II &middot; Path to Glory</span>
-          <h2
-            class="font-roman font-bold text-3xl sm:text-4xl md:text-5xl gold-text mb-2"
-          >
-            Enter the Arena
-          </h2>
-          <p class="font-roman text-imperial text-lg sm:text-xl tracking-wider">
-            How to Buy DESTROIUS
+      <!-- HOW TO BUY -->
+      <section class="section section-alt" id="howtobuy">
+        <div class="container">
+          <div class="section-divider">
+            <span>⚔</span><span class="divider-star">☆</span><span>⚔</span>
+          </div>
+          <p class="section-label">How to Buy</p>
+          <h2 class="section-title">Join the Legion</h2>
+          <p class="section-subtitle">
+            Four simple steps to claim your place among the gladiators of
+            $WOKIUS.
           </p>
-          <div class="ornament-divider"><i></i><i></i><i></i></div>
-        </div>
-
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-12">
-          <!-- Step I -->
-          <div
-            class="shield-card gold-corners reveal buy-reveal tilt-card"
-            data-tilt
-          >
-            <span class="corner corner--tl" aria-hidden="true"></span
-            ><span class="corner corner--tr" aria-hidden="true"></span
-            ><span class="corner corner--bl" aria-hidden="true"></span
-            ><span class="corner corner--br" aria-hidden="true"></span>
-            <span class="roman-numeral gold-text">I</span>
-            <div class="mb-4">
-              <img
-                src="assets/icons/metamask.png"
-                alt=""
-                class="icon-img icon-img-lg"
-                aria-hidden="true"
-              />
-            </div>
-            <h3 class="font-roman text-gold text-lg mb-3 tracking-wide">
-              Forge Your Wallet
-            </h3>
-            <p class="font-luxury text-ivory/70 text-sm leading-relaxed">
-              Download <strong class="text-ivory">Metamask</strong>. Create your
-              wallet, guard your seed phrase like a gladiator guards his blade.
-              Connect to the Ethereum network.
-            </p>
+          <div class="steps">
+            <article class="step-card">
+              <div class="step-num">I</div>
+              <h3>Get an Ethereum Wallet</h3>
+              <p>
+                Download MetaMask or Coinbase Wallet from your app store or
+                browser extension. Create a new wallet and secure your seed
+                phrase.
+              </p>
+            </article>
+            <article class="step-card">
+              <div class="step-num">II</div>
+              <h3>Get Some ETH</h3>
+              <p>
+                Buy ETH on any major exchange like Coinbase, Binance, or Kraken.
+                Send your ETH to your new Ethereum wallet address.
+              </p>
+            </article>
+            <article class="step-card">
+              <div class="step-num">III</div>
+              <h3>Go to Uniswap</h3>
+              <p>
+                Head to app.uniswap.org and connect your wallet. Search for
+                $WOKIUS or paste the contract address to find the token.
+              </p>
+            </article>
+            <article class="step-card">
+              <div class="step-num">IV</div>
+              <h3>Buy $WOKIUS</h3>
+              <p>
+                Set the amount of ETH you want to swap, confirm the transaction,
+                and welcome to the empire, gladiator.
+              </p>
+            </article>
           </div>
-
-          <!-- Step II -->
-          <div
-            class="shield-card gold-corners reveal buy-reveal tilt-card"
-            data-tilt
-          >
-            <span class="corner corner--tl" aria-hidden="true"></span
-            ><span class="corner corner--tr" aria-hidden="true"></span
-            ><span class="corner corner--bl" aria-hidden="true"></span
-            ><span class="corner corner--br" aria-hidden="true"></span>
-            <span class="roman-numeral gold-text">II</span>
-            <div class="mb-4">
-              <img
-                src="assets/icons/ethereum.png"
-                alt=""
-                class="icon-img icon-img-lg icon-img-ivory"
-                aria-hidden="true"
-              />
-            </div>
-            <h3 class="font-roman text-gold text-lg mb-3 tracking-wide">
-              Acquire ETH
-            </h3>
-            <p class="font-luxury text-ivory/70 text-sm leading-relaxed">
-              Purchase ETH on Coinbase, Binance, or any exchange. Transfer ETH
-              to your Ethereum wallet. You'll need ETH for the swap and a small
-              network fee to enter the arena.
-            </p>
-          </div>
-
-          <!-- Step III -->
-          <div
-            class="shield-card gold-corners reveal buy-reveal tilt-card"
-            data-tilt
-          >
-            <span class="corner corner--tl" aria-hidden="true"></span
-            ><span class="corner corner--tr" aria-hidden="true"></span
-            ><span class="corner corner--bl" aria-hidden="true"></span
-            ><span class="corner corner--br" aria-hidden="true"></span>
-            <span class="roman-numeral gold-text">III</span>
-            <div class="mb-4">
-              <img
-                src="assets/icons/uniswap.png"
-                alt=""
-                class="icon-img icon-img-lg"
-                aria-hidden="true"
-              />
-            </div>
-            <h3 class="font-roman text-gold text-lg mb-3 tracking-wide">
-              March to Pump.fun
-            </h3>
-            <p class="font-luxury text-ivory/70 text-sm leading-relaxed">
-              Navigate to Uniswap and connect your wallet. Search for
-              <strong class="text-gold">$DESTROIUS</strong> or paste the
-              contract address. Verify the token before buying.
-            </p>
-          </div>
-
-          <!-- Step IV -->
-          <div
-            class="shield-card gold-corners reveal buy-reveal tilt-card"
-            data-tilt
-          >
-            <span class="corner corner--tl" aria-hidden="true"></span
-            ><span class="corner corner--tr" aria-hidden="true"></span
-            ><span class="corner corner--bl" aria-hidden="true"></span
-            ><span class="corner corner--br" aria-hidden="true"></span>
-            <span class="roman-numeral gold-text">IV</span>
-            <div class="mb-4">
-              <img
-                src="assets/icons/sword.svg"
-                alt=""
-                class="icon-img icon-img-lg icon-img-gold"
-                aria-hidden="true"
-              />
-            </div>
-            <h3 class="font-roman text-gold text-lg mb-3 tracking-wide">
-              Enter the Arena
-            </h3>
-            <p class="font-luxury text-ivory/70 text-sm leading-relaxed">
-              Swap SOL for $DESTROIUS on Uniswap. Confirm the transaction in
-              your wallet. Welcome to the Legion — you've entered the to destroy the Woke Mind Virus!
-            </p>
-          </div>
-        </div>
-
-        <div class="text-center reveal buy-reveal">
-          <a
-            href="https://app.uniswap.org/swap?chain=mainnet&inputCurrency=NATIVE&outputCurrency=0xCoimingSoon"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="shield-btn shield-btn-lg coin-burst-btn inline-flex"
-          >
-            <span class="sword-slash"></span>
-
-            BUY ON UNISWAP
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Ticker Divider -->
-    <div class="ticker-wrap arena-banner py-3 relative z-10" aria-hidden="true">
-      <div
-        class="ticker-track font-luxury text-sm text-gold/80 tracking-widest uppercase"
-        data-ticker
-      ></div>
-    </div>
-
-    <!-- ═══════════════════ CHART ═══════════════════ -->
-    <section
-      id="chart"
-      class="gladiator-section relative py-24 lg:py-32 overflow-hidden"
-    >
-      <div
-        class="section-bg section-bg-parallax"
-        data-section-bg
-        style="background-image: url('ship.png')"
-        aria-hidden="true"
-      ></div>
-      <div
-        class="section-bg-overlay section-bg-overlay--chart"
-        aria-hidden="true"
-      ></div>
-      <img
-        src="chariot.png"
-        alt=""
-        class="section-accent section-accent--md"
-        style="right: 5%; top: 22%"
-        aria-hidden="true"
-      />
-      <div class="section-content max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12 reveal chart-reveal">
-          <span class="section-kicker"
-            >Chapter III &middot; The Battlefield</span
-          >
-          <h2
-            class="font-roman font-bold text-3xl sm:text-4xl md:text-5xl gold-text-glow mb-2"
-          >
-            LIVE BATTLE CHART
-          </h2>
-          <p
-            class="font-luxury text-ivory/50 text-sm tracking-widest uppercase"
-          >
-            Watch the arena in real-time
-          </p>
-          <div class="ornament-divider"><i></i><i></i><i></i></div>
-        </div>
-
-        <div class="chart-frame reveal chart-reveal mt-6">
-          <div class="chart-frame__plaque">
-            <span class="live-dot" aria-hidden="true"></span>
-            Arena Feed &middot; Live
-          </div>
-          <div class="chart-frame-inner">
-            <div id="dexscreener-embed">
-              <iframe
-                src="https://dexscreener.com/ethereum/0xComingSoon?embed=1&theme=dark&info=0"
-                style="
-                  position: absolute;
-                  width: 100%;
-                  height: 100%;
-                  top: 0;
-                  left: 0;
-                  border: 0;
-                "
-                allowfullscreen
-                loading="lazy"
-                title="DESTROIUS MAXIMUS Dexscreener Chart"
+          <div class="contract-box">
+            <p class="contract-label">Contract Address</p>
+            <div class="contract-row">
+              <code id="contractAddress">Loading...</code>
+              <button
+                class="btn-copy"
+                id="copyContract"
+                aria-label="Copy contract address"
               >
-              </iframe>
+                Copy
+              </button>
             </div>
           </div>
+          <div class="section-cta">
+            <a
+              href="#"
+              class="btn btn-primary"
+              id="howtoBuyBtn"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Buy on Uniswap</a
+            >
+          </div>
         </div>
+      </section>
 
-        <div class="text-center mt-8 reveal chart-reveal">
-          <a
-            href="https://dexscreener.com/ethereum/0xComingSoon"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="crimson-btn inline-flex coin-burst-btn"
-          >
-            <span class="sword-slash"></span>
-            View Full Chart on Dexscreener
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Ticker Divider -->
-    <div class="ticker-wrap arena-banner py-3 relative z-10" aria-hidden="true">
-      <div
-        class="ticker-track font-luxury text-sm text-gold/80 tracking-widest uppercase"
-        data-ticker
-      ></div>
-    </div>
-
-    <!-- ═══════════════════ JOIN US ═══════════════════ -->
-    <section
-      id="join-us"
-      class="gladiator-section relative overflow-hidden py-20 lg:py-28"
-    >
-      <div
-        class="section-bg section-bg-parallax"
-        data-section-bg
-        style="background-image: url('horse.png')"
-        aria-hidden="true"
-      ></div>
-      <div
-        class="section-bg-overlay section-bg-overlay--join"
-        aria-hidden="true"
-      ></div>
-
-      <div
-        class="section-content px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center"
-      >
-        <!-- Roman-framed banner -->
-        <div class="reveal join-reveal roman-banner-frame">
-          <div class="roman-banner-frame__arch" aria-hidden="true"></div>
-          <div class="roman-banner-frame__inner" id="banner-frame">
-            <img
-              src="banner.png"
-              alt="Join the DESTROIUS MAXIMUS Legion"
-              class="roman-banner-frame__img"
+      <!-- CHART -->
+      <section class="section" id="chart">
+        <div class="container">
+          <div class="section-divider">
+            <span>⚔</span><span class="divider-star">☆</span><span>⚔</span>
+          </div>
+          <p class="section-label">Trade</p>
+          <h2 class="section-title">Imperial Exchange</h2>
+          <p class="section-subtitle">
+            Track the conquest of $WOKIUS on the battlefield of charts
+          </p>
+          <div class="chart-wrap">
+            <iframe
+              id="dexscreenerEmbed"
+              title="DexScreener chart for $WOKIUS"
+              allow="clipboard-write"
               loading="lazy"
-            />
-            <div class="roman-banner-frame__veil" aria-hidden="true"></div>
-            <canvas id="banner-particles" aria-hidden="true"></canvas>
+            ></iframe>
           </div>
-          <div class="roman-banner-frame__label">
-            <img
-              src="assets/icons/laurel.svg"
-              alt=""
-              class="icon-img icon-img-sm icon-img-gold"
-              style="transform: scaleX(-1)"
-              aria-hidden="true"
-            />
-            <span>Destroy the Woke Mind Virus</span>
-            <img
-              src="assets/icons/laurel.svg"
-              alt=""
-              class="icon-img icon-img-sm icon-img-gold"
-              aria-hidden="true"
-            />
+          <div class="section-cta">
+            <a
+              href="#"
+              class="btn btn-secondary"
+              id="chartLinkBtn"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View on DexScreener</a
+            >
           </div>
         </div>
+      </section>
 
-        <span class="reveal join-reveal section-kicker"
-          >Chapter IV &middot; The Legion</span
-        >
-        <h2
-          class="reveal join-reveal font-roman font-bold text-3xl sm:text-4xl md:text-5xl gold-text-glow mb-6"
-        >
-          Join the Legion
-        </h2>
-        <p
-          class="reveal join-reveal font-roman text-lg sm:text-xl text-imperial mb-2"
-        >
-          Destroy the Woke Mind Virus
+      <!-- JOIN US -->
+      <section class="section section-join" id="joinus">
+        <div class="join-banner">
+          <img src="banner.png" alt="WOKIUS MAXIMUS — Ave Imperator" />
+          <div class="join-banner-overlay"></div>
+        </div>
+        <div class="container join-content">
+          <div class="section-divider">
+            <span>⚔</span><span class="divider-star">☆</span><span>⚔</span>
+          </div>
+          <h2 class="section-title">Join the Legion</h2>
+          <p class="section-subtitle">
+            The empire grows stronger with every soldier. Choose your path.
+          </p>
+          <div class="join-cards">
+            <article class="join-card">
+              <div class="join-card-icon">𝕏</div>
+              <h3>Spread the Word</h3>
+              <p>
+                Follow, repost, and let the world know: the gladiator has
+                returned. Memes welcome.
+              </p>
+              <a
+                href="https://x.com/wokiusmaximus"
+                class="btn btn-outline"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Follow on X</a
+              >
+            </article>
+            <article class="join-card join-card--featured">
+              <div class="join-card-icon">⚔</div>
+              <h3>Buy $WOKIUS</h3>
+              <p>
+                Acquire your imperial tokens on Uniswap. The gates to the
+                coliseum are always open.
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary"
+                id="joinBuyBtn"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Buy on Uniswap</a
+              >
+            </article>
+            <article class="join-card">
+              <div class="join-card-icon">📊</div>
+              <h3>Watch the Chart</h3>
+              <p>
+                Track every swing of the gladiator's sword on DexScreener.
+                Diamond hands only.
+              </p>
+              <a
+                href="#"
+                class="btn btn-outline"
+                id="joinChartBtn"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View Chart</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <img src="logo.png" alt="" class="footer-logo" />
+          <span>WOKIUS MAXIMUS</span>
+        </div>
+        <p class="footer-tagline">
+          $WOKIUS • Imperator of Woke Mind Virus
         </p>
-
-
-        <!-- X Social -->
-        <div class="flex flex-wrap items-center justify-center gap-4 mb-8">
+        <div class="footer-links">
           <a
-            href="https://x.com/destmaximus_eth"
+            href="https://x.com/wokiusmaximus"
             target="_blank"
             rel="noopener noreferrer"
-            class="social-icon social-icon-lg coin-burst-btn"
-            aria-label="Follow on X"
+            >X / Twitter</a
           >
-            <img
-              src="assets/icons/x.svg"
-              alt=""
-              class="w-8 h-8 icon-img-ivory"
-              aria-hidden="true"
-            />
-          </a>
           <a
-            href="https://t.me/destroiusmaximus"
+            href="https://t.me/wokiusmaximus_portal"
             target="_blank"
             rel="noopener noreferrer"
-            class="social-icon social-icon-lg coin-burst-btn"
-            aria-label="Follow on X"
+            >Telegram</a
           >
-            <img
-              src="assets/icons/telegram.png"
-              alt=""
-              class="w-8 h-8 icon-img-ivory"
-              aria-hidden="true"
-            />
-          </a>
-        </div>
-
-        
-        
-      </div>
-    </section>
-
-    <!-- Ticker Divider -->
-    <div class="ticker-wrap arena-banner py-3 relative z-10" aria-hidden="true">
-      <div
-        class="ticker-track font-luxury text-sm text-gold/80 tracking-widest uppercase"
-        data-ticker
-      ></div>
-    </div>
-
-    <!-- ═══════════════════ FOOTER ═══════════════════ -->
-    <footer
-      class="gladiator-section relative border-t border-gold/15 py-12 lg:py-16 overflow-hidden"
-    >
-      <div
-        class="section-bg-overlay section-bg-overlay--footer"
-        aria-hidden="true"
-      ></div>
-      <div class="section-content max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col items-center text-center">
-          <span class="section-kicker">S &middot; P &middot; Q &middot; T</span>
-          <p
-            class="font-roman text-xl sm:text-2xl gold-text-glow mb-2 flex items-center justify-center gap-2 flex-wrap"
+          <a
+            href="#"
+            id="footerBuyBtn"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Uniswap</a
           >
-            <img
-              src="assets/icons/colosseum.svg"
-              alt=""
-              class="icon-img icon-img-md"
-              aria-hidden="true"
-            />
-            Ave DESTROIUS MAXIMUS!
-            <img
-              src="assets/icons/coin.svg"
-              alt=""
-              class="icon-img icon-img-md icon-img-gold"
-              aria-hidden="true"
-            />
-          </p>
-          <p class="font-luxury text-ivory/40 text-sm mb-8">
-            $DESTROIUS — Destroy the Woke Mind Virus on Ethereum
-          </p>
-          <div class="ornament-divider mb-8" style="max-width: 16rem">
-            <i></i><i></i><i></i>
-          </div>
-
-          <div class="flex flex-wrap items-center justify-center gap-4 mb-8">
-            <a
-              href="https://x.com/destmaximus_eth"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="social-icon w-11 h-11"
-              aria-label="Follow on X"
-              title="X / Twitter"
-            >
-              <img
-                src="assets/icons/x.svg"
-                alt=""
-                class="w-5 h-5 icon-img-ivory"
-                aria-hidden="true"
-              />
-            </a>
-            <a
-              href="https://t.me/destroiusmaximus"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="social-icon w-11 h-11"
-              aria-label="View on Solscan"
-              title="Solscan"
-            >
-              <img
-                src="assets/icons/telegram.png"
-                alt=""
-                class="social-brand-icon"
-                aria-hidden="true"
-              />
-            </a>
-            <a
-              href="https://dexscreener.com/ethereum/0xComingSoon"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="social-icon w-11 h-11"
-              aria-label="View on Dexscreener"
-              title="Dexscreener"
-            >
-              <img
-                src="assets/icons/dexscreener.png"
-                alt=""
-                class="social-brand-icon"
-                aria-hidden="true"
-              />
-            </a>
-            <a
-              href="https://app.uniswap.org/swap?chain=mainnet&inputCurrency=NATIVE&outputCurrency=0xCoimingSoon"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="shield-btn shield-btn-nav coin-burst-btn"
-              >BUY $DESTROIUS</a
-            >
-          </div>
-
-          <p class="font-luxury text-ivory/20 text-xs">
-            &copy; 2026 DESTROIUS MAXIMUS. All rights reserved. Built for the
-            Legion.
-          </p>
+          <a
+            href="#"
+            id="footerChartBtn"
+            target="_blank"
+            rel="noopener noreferrer"
+            >DexScreener</a
+          >
         </div>
+        <p class="footer-disclaimer">
+          $WOKIUS is a meme coin with no intrinsic value. This is not financial
+          advice. DYOR.
+        </p>
+        <p class="footer-copy">
+          © <span id="year"></span> WOKIUS MAXIMUS. Ave, Imperator!
+        </p>
       </div>
     </footer>
 
-    <!-- Back to Top -->
-    <button
-      id="back-to-top"
-      class="back-to-top"
-      aria-label="Back to top"
-      title="Back to top"
-    >
-      <img
-        src="assets/icons/helmet.svg"
-        alt=""
-        class="icon-img icon-img-dark"
-        style="width: 28px; height: 28px"
-        aria-hidden="true"
-      />
-    </button>
-
-    <!-- GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-
-    <script>
-      (function () {
-        "use strict";
-
-        /* ─── GSAP Setup ─── */
-        gsap.registerPlugin(ScrollTrigger);
-
-        /* ─── Infinite Ticker Carousels ─── */
-        const tickerItems = [
-          { icons: ["sword", "sword"], text: "AVE DESTROIUS MAXIMUS" },
-          { icons: ["banner", "colosseum"], text: "Destroy the Woke Mind Virus" },
-          { icons: ["coin", "coin"], text: "TRILLIONAIRE GLORY AWAITS" },
-          { icons: ["shield", "ethereum"], text: "$DESTROIUS ON Ethereum" },
-          { icons: ["helmet", "laurel"], text: "DESTROY THE Woke Mind Virus" },
-        ];
-
-        function buildTickerSet() {
-          return tickerItems
-            .map(
-              (item) =>
-                `<span class="ticker-item">` +
-                `<img src="assets/icons/${item.icons[0]}.svg" alt="" class="ticker-icon" aria-hidden="true" />` +
-                `${item.text}` +
-                `<img src="assets/icons/${item.icons[1]}.svg" alt="" class="ticker-icon" aria-hidden="true" />` +
-                `</span>`
-            )
-            .join("");
-        }
-
-        function populateTickers() {
-          const set = buildTickerSet();
-          document.querySelectorAll("[data-ticker]").forEach((track) => {
-            // Fill one half with enough copies to exceed the viewport,
-            // then duplicate it so translateX(-50%) loops seamlessly.
-            track.innerHTML = set;
-            let half = set;
-            let guard = 0;
-            while (track.scrollWidth < window.innerWidth + 100 && guard < 10) {
-              half += set;
-              track.innerHTML = half;
-              guard++;
-            }
-            track.innerHTML = half + half;
-          });
-        }
-
-        populateTickers();
-        let tickerResizeTimer;
-        window.addEventListener("resize", () => {
-          clearTimeout(tickerResizeTimer);
-          tickerResizeTimer = setTimeout(populateTickers, 250);
-        });
-
-        /* ─── Navbar Scroll ─── */
-        const navbar = document.getElementById("navbar");
-        const backToTop = document.getElementById("back-to-top");
-
-        const sectionBgs = document.querySelectorAll("[data-section-bg]");
-
-        function onScroll() {
-          const y = window.scrollY;
-          navbar.classList.toggle("scrolled", y > 50);
-          backToTop.classList.toggle("visible", y > 600);
-
-          sectionBgs.forEach((bg) => {
-            const section = bg.closest("section, footer");
-            if (!section) return;
-            const rect = section.getBoundingClientRect();
-            const shift =
-              (rect.top + rect.height * 0.5 - window.innerHeight * 0.5) * -0.04;
-            bg.style.transform = `translateY(${shift}px)`;
-          });
-        }
-        window.addEventListener("scroll", onScroll, { passive: true });
-        onScroll();
-
-        backToTop.addEventListener("click", () => {
-          window.scrollTo({ top: 0, behavior: "smooth" });
-        });
-
-        /* ─── Mobile Menu ─── */
-        const menuToggle = document.getElementById("menu-toggle");
-        const menuClose = document.getElementById("menu-close");
-        const mobileMenu = document.getElementById("mobile-menu");
-        const menuOverlay = document.getElementById("menu-overlay");
-
-        function openMenu() {
-          mobileMenu.classList.add("open");
-          menuOverlay.classList.remove("hidden");
-          document.body.style.overflow = "hidden";
-        }
-        function closeMenu() {
-          mobileMenu.classList.remove("open");
-          menuOverlay.classList.add("hidden");
-          document.body.style.overflow = "";
-        }
-
-        menuToggle.addEventListener("click", openMenu);
-        menuClose.addEventListener("click", closeMenu);
-        menuOverlay.addEventListener("click", closeMenu);
-        document
-          .querySelectorAll(".mobile-nav-link")
-          .forEach((l) => l.addEventListener("click", closeMenu));
-
-        /* ─── GSAP Scroll Reveals ─── */
-        gsap.utils.toArray(".hero-reveal").forEach((el, i) => {
-          gsap.fromTo(
-            el,
-            { opacity: 0, y: 50, scale: 0.95 },
-            {
-              opacity: 1,
-              y: 0,
-              scale: 1,
-              duration: 1,
-              delay: i * 0.15,
-              ease: "power3.out",
-            }
-          );
-        });
-
-        gsap.utils.toArray(".about-reveal").forEach((el) => {
-          gsap.fromTo(
-            el,
-            { opacity: 0, y: 60 },
-            {
-              opacity: 1,
-              y: 0,
-              duration: 0.9,
-              ease: "power3.out",
-              scrollTrigger: {
-                trigger: el,
-                start: "top 85%",
-                toggleActions: "play none none reverse",
-              },
-            }
-          );
-        });
-
-        gsap.utils.toArray(".buy-reveal").forEach((el, i) => {
-          gsap.fromTo(
-            el,
-            { opacity: 0, y: 50, rotateX: 10 },
-            {
-              opacity: 1,
-              y: 0,
-              rotateX: 0,
-              duration: 0.8,
-              delay: i * 0.1,
-              ease: "power3.out",
-              scrollTrigger: {
-                trigger: el,
-                start: "top 88%",
-                toggleActions: "play none none reverse",
-              },
-            }
-          );
-        });
-
-        gsap.utils.toArray(".chart-reveal").forEach((el) => {
-          gsap.fromTo(
-            el,
-            { opacity: 0, scale: 0.92 },
-            {
-              opacity: 1,
-              scale: 1,
-              duration: 1,
-              ease: "power3.out",
-              scrollTrigger: {
-                trigger: el,
-                start: "top 85%",
-                toggleActions: "play none none reverse",
-              },
-            }
-          );
-        });
-
-        gsap.utils.toArray(".join-reveal").forEach((el, i) => {
-          gsap.fromTo(
-            el,
-            { opacity: 0, y: 40 },
-            {
-              opacity: 1,
-              y: 0,
-              duration: 0.8,
-              delay: i * 0.12,
-              ease: "power3.out",
-              scrollTrigger: {
-                trigger: el,
-                start: "top 88%",
-                toggleActions: "play none none reverse",
-              },
-            }
-          );
-        });
-
-        /* ─── Awaken Icons ─── */
-        const awakenIcons = document.querySelectorAll("[data-awaken]");
-        const awakenObserver = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add("awake");
-              }
-            });
-          },
-          { threshold: 0.3 }
-        );
-        awakenIcons.forEach((icon) => awakenObserver.observe(icon));
-
-        /* ─── Hero Parallax Layers ─── */
-        const parallaxLayers = document.querySelectorAll(".parallax-layer");
-        function onHeroParallax() {
-          const y = window.scrollY;
-          parallaxLayers.forEach((layer) => {
-            const speed = parseFloat(layer.dataset.speed) || 0.2;
-            layer.style.transform = `translateY(${y * speed}px)`;
-          });
-        }
-        window.addEventListener("scroll", onHeroParallax, { passive: true });
-        onHeroParallax();
-
-        /* ─── 3D Card Tilt ─── */
-        document.querySelectorAll("[data-tilt]").forEach((card) => {
-          card.addEventListener("mousemove", (e) => {
-            const rect = card.getBoundingClientRect();
-            const x = (e.clientX - rect.left) / rect.width - 0.5;
-            const y = (e.clientY - rect.top) / rect.height - 0.5;
-            card.style.transform = `translateY(-8px) rotateX(${
-              -y * 8
-            }deg) rotateY(${x * 8}deg)`;
-          });
-          card.addEventListener("mouseleave", () => {
-            card.style.transform = "";
-          });
-        });
-
-        /* ─── Coin Burst on CTA Click ─── */
-        function createCoinBurst(x, y, count = 20) {
-          const container = document.createElement("div");
-          container.className = "coin-burst";
-          container.style.left = x + "px";
-          container.style.top = y + "px";
-          document.body.appendChild(container);
-
-          for (let i = 0; i < count; i++) {
-            const coin = document.createElement("div");
-            coin.className = "burst-coin";
-            const angle = (Math.PI * 2 * i) / count + Math.random() * 0.5;
-            const dist = 60 + Math.random() * 100;
-            coin.style.setProperty("--tx", Math.cos(angle) * dist + "px");
-            coin.style.setProperty("--ty", Math.sin(angle) * dist + "px");
-            coin.style.animationDelay = Math.random() * 0.15 + "s";
-            container.appendChild(coin);
-          }
-
-          setTimeout(() => container.remove(), 1200);
-        }
-
-        document.querySelectorAll(".coin-burst-btn").forEach((btn) => {
-          btn.addEventListener("click", (e) => {
-            createCoinBurst(e.clientX, e.clientY);
-            const slash = btn.querySelector(".sword-slash");
-            if (slash) {
-              slash.classList.add("active");
-              setTimeout(() => slash.classList.remove("active"), 400);
-            }
-          });
-        });
-
-        /* ─── Animated Counters ─── */
-        function animateCounter(el) {
-          const target = parseInt(el.dataset.counter, 10);
-          if (!target) return;
-          const prefix = el.textContent.includes("$") ? "$" : "";
-          const duration = 2000;
-          const start = performance.now();
-
-          function update(now) {
-            const progress = Math.min((now - start) / duration, 1);
-            const eased = 1 - Math.pow(1 - progress, 3);
-            const value = Math.floor(eased * target);
-            el.textContent = prefix + value.toLocaleString();
-            if (progress < 1) requestAnimationFrame(update);
-          }
-          requestAnimationFrame(update);
-        }
-
-        const counterObserver = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                animateCounter(entry.target);
-                counterObserver.unobserve(entry.target);
-              }
-            });
-          },
-          { threshold: 0.5 }
-        );
-
-        document
-          .querySelectorAll("[data-counter]")
-          .forEach((el) => counterObserver.observe(el));
-
-        /* ─── Global Particle System ─── */
-        const canvas = document.getElementById("particle-canvas");
-        const ctx = canvas.getContext("2d");
-        let particles = [];
-        let animId;
-
-        function resizeCanvas() {
-          canvas.width = window.innerWidth;
-          canvas.height = window.innerHeight;
-        }
-
-        class Particle {
-          constructor() {
-            this.reset();
-          }
-          reset() {
-            this.x = Math.random() * canvas.width;
-            this.y = Math.random() * canvas.height;
-            this.size = Math.random() * 3 + 1;
-            this.speedX = (Math.random() - 0.5) * 0.4;
-            this.speedY = Math.random() * 0.3 + 0.1;
-            this.opacity = Math.random() * 0.5 + 0.1;
-            const r = Math.random();
-            this.type =
-              r > 0.75
-                ? "coin"
-                : r > 0.55
-                ? "spark"
-                : r > 0.35
-                ? "ember"
-                : "dust";
-            if (this.type === "ember") {
-              this.size = Math.random() * 2 + 0.8;
-              this.speedY = Math.random() * 0.6 + 0.3;
-              this.speedX = (Math.random() - 0.5) * 0.25;
-              this.flicker = Math.random() * Math.PI * 2;
-            }
-            this.rotation = Math.random() * Math.PI * 2;
-            this.rotSpeed = (Math.random() - 0.5) * 0.02;
-          }
-          update() {
-            this.x += this.speedX;
-            this.y -= this.speedY;
-            this.rotation += this.rotSpeed;
-            if (this.type === "ember") {
-              this.flicker += 0.08;
-              this.x += Math.sin(this.flicker) * 0.3;
-            }
-            if (this.y < -10 || this.x < -10 || this.x > canvas.width + 10)
-              this.reset();
-          }
-          draw() {
-            ctx.save();
-            ctx.globalAlpha = this.opacity;
-            ctx.translate(this.x, this.y);
-            ctx.rotate(this.rotation);
-
-            if (this.type === "coin") {
-              const grad = ctx.createRadialGradient(0, 0, 0, 0, 0, this.size);
-              grad.addColorStop(0, "#FFF8DC");
-              grad.addColorStop(0.5, "#FFD700");
-              grad.addColorStop(1, "#B8860B");
-              ctx.fillStyle = grad;
-              ctx.beginPath();
-              ctx.arc(0, 0, this.size, 0, Math.PI * 2);
-              ctx.fill();
-            } else if (this.type === "spark") {
-              ctx.strokeStyle = "#FFD700";
-              ctx.lineWidth = 0.5;
-              ctx.beginPath();
-              ctx.moveTo(-this.size * 2, 0);
-              ctx.lineTo(this.size * 2, 0);
-              ctx.moveTo(0, -this.size * 2);
-              ctx.lineTo(0, this.size * 2);
-              ctx.stroke();
-            } else if (this.type === "ember") {
-              ctx.globalAlpha =
-                this.opacity * (0.6 + Math.sin(this.flicker) * 0.4);
-              const eg = ctx.createRadialGradient(0, 0, 0, 0, 0, this.size * 2);
-              eg.addColorStop(0, "#FFB347");
-              eg.addColorStop(0.5, "#E2543E");
-              eg.addColorStop(1, "rgba(159, 29, 53, 0)");
-              ctx.fillStyle = eg;
-              ctx.beginPath();
-              ctx.arc(0, 0, this.size * 2, 0, Math.PI * 2);
-              ctx.fill();
-            } else {
-              ctx.fillStyle = "#FDB927";
-              ctx.fillRect(
-                -this.size / 2,
-                -this.size / 2,
-                this.size,
-                this.size
-              );
-            }
-            ctx.restore();
-          }
-        }
-
-        function initParticles() {
-          resizeCanvas();
-          const count = Math.min(80, Math.floor(window.innerWidth / 15));
-          particles = Array.from({ length: count }, () => new Particle());
-        }
-
-        function animateParticles() {
-          ctx.clearRect(0, 0, canvas.width, canvas.height);
-          particles.forEach((p) => {
-            p.update();
-            p.draw();
-          });
-          animId = requestAnimationFrame(animateParticles);
-        }
-
-        initParticles();
-        animateParticles();
-        window.addEventListener("resize", () => {
-          resizeCanvas();
-          initParticles();
-        });
-
-        /* ─── Banner Section Particles ─── */
-        const bannerCanvas = document.getElementById("banner-particles");
-        if (bannerCanvas) {
-          const bCtx = bannerCanvas.getContext("2d");
-          let bannerParticles = [];
-
-          function resizeBanner() {
-            const frame = document.getElementById("banner-frame");
-            if (!frame) return;
-            const rect = frame.getBoundingClientRect();
-            bannerCanvas.width = rect.width;
-            bannerCanvas.height = rect.height;
-          }
-
-          class BannerParticle {
-            constructor() {
-              this.reset();
-            }
-            reset() {
-              this.x = Math.random() * bannerCanvas.width;
-              this.y = Math.random() * bannerCanvas.height;
-              this.size = Math.random() * 4 + 2;
-              this.speedY = Math.random() * 0.5 + 0.2;
-              this.opacity = Math.random() * 0.6 + 0.2;
-            }
-            update() {
-              this.y -= this.speedY;
-              if (this.y < -10) {
-                this.y = bannerCanvas.height + 10;
-                this.x = Math.random() * bannerCanvas.width;
-              }
-            }
-            draw() {
-              bCtx.save();
-              bCtx.globalAlpha = this.opacity;
-              const grad = bCtx.createRadialGradient(
-                this.x,
-                this.y,
-                0,
-                this.x,
-                this.y,
-                this.size
-              );
-              grad.addColorStop(0, "#FFF8DC");
-              grad.addColorStop(1, "#FFD700");
-              bCtx.fillStyle = grad;
-              bCtx.beginPath();
-              bCtx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-              bCtx.fill();
-              bCtx.restore();
-            }
-          }
-
-          resizeBanner();
-          bannerParticles = Array.from(
-            { length: 30 },
-            () => new BannerParticle()
-          );
-
-          function animateBanner() {
-            bCtx.clearRect(0, 0, bannerCanvas.width, bannerCanvas.height);
-            bannerParticles.forEach((p) => {
-              p.update();
-              p.draw();
-            });
-            requestAnimationFrame(animateBanner);
-          }
-          animateBanner();
-          window.addEventListener("resize", resizeBanner);
-        }
-
-        /* ─── Contract Address Copy ─── */
-        const caBtn = document.getElementById("ca-copy");
-        if (caBtn) {
-          const caAddress = "0xComingSoon";
-          caBtn.addEventListener("click", () => {
-            navigator.clipboard.writeText(caAddress).then(() => {
-              caBtn.classList.add("copied");
-              setTimeout(() => caBtn.classList.remove("copied"), 1600);
-            });
-          });
-        }
-
-        /* ─── Smooth Active Nav Highlight ─── */
-        const sections = document.querySelectorAll("section[id]");
-        const navLinks = document.querySelectorAll(".nav-link");
-
-        const sectionObserver = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                navLinks.forEach((link) => {
-                  link.classList.toggle(
-                    "text-gold",
-                    link.getAttribute("href") === "#" + entry.target.id
-                  );
-                  link.classList.toggle(
-                    "text-ivory/80",
-                    link.getAttribute("href") !== "#" + entry.target.id
-                  );
-                });
-              }
-            });
-          },
-          { threshold: 0.3, rootMargin: "-80px 0px -50% 0px" }
-        );
-
-        sections.forEach((s) => sectionObserver.observe(s));
-      })();
-    </script>
+    <script src="config.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
